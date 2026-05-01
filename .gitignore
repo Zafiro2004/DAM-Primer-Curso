@@ -5,3 +5,12 @@ Entornos/
 Sistemas/
 
 _Obs-DAM/.obsidian/
+
+# Ignorar archivos pesados y multimedia
+*.pdf
+*.docx
+*.mp4
+*.zip
+*.rar
+*.ova
+*.vdi
