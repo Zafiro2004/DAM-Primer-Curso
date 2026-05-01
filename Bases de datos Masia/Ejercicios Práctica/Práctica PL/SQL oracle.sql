@@ -444,8 +444,45 @@ CREATE OR REPLACE PROCEDURE informe_por_ciudad(
     p_fecha_ini IN DATE,
     p_fecha_fin IN DATE
 ) IS
-    -- Tu código aquí
+    CURSOR c_ciudades IS
+        SELECT c.cod_ciudad,
+               c.nombre as nombre_ciudad,
+               COUNT(a.cod_alquiler) as total_vehiculos,
+               SUM(f.importe_final) as total_dinero
+        FROM CIUDAD c
+                 JOIN EMPLEADO e ON c.cod_ciudad = e.cod_ciudad
+                 JOIN ALQUILER a ON e.cod_empleado = a.cod_empleado
+                 JOIN FACTURA f ON a.cod_alquiler = f.cod_alquiler
+        WHERE a.fecha_inicio BETWEEN p_fecha_ini AND p_fecha_fin
+        GROUP BY c.cod_ciudad, c.nombre;
+        v_mejor_emp EMPLEADO.NOMBRE%type;
+        v_max_alquileres int;
+        v_ciudad_actual CIUDAD.COD_CIUDAD%type;
+        v_nombre_ciudad CIUDAD.NOMBRE%type;
+        v_total_vehiculos int;
+        v_total_dinero ALQUILER.importe_total%type;
 BEGIN
-    NULL;
+    open c_ciudades;
+
+    loop
+        FETCH c_ciudades INTO v_ciudad_actual, v_nombre_ciudad, v_total_vehiculos, v_total_dinero;
+        EXIT WHEN c_ciudades%NOTFOUND;
+
+        SELECT e.nombre || ' ' || e.apellidos, COUNT(a.cod_alquiler)
+        INTO v_mejor_emp, v_max_alquileres
+        FROM EMPLEADO e
+                 JOIN ALQUILER a ON e.cod_empleado = a.cod_empleado
+        WHERE e.cod_ciudad = v_ciudad_actual
+          AND a.fecha_inicio BETWEEN p_fecha_ini AND p_fecha_fin
+        GROUP BY e.nombre, e.apellidos
+        ORDER BY COUNT(a.cod_alquiler) DESC
+            FETCH FIRST 1 ROWS ONLY;
+
+        DBMS_OUTPUT.PUT_LINE('Ciudad: ' || v_nombre_ciudad);
+        DBMS_OUTPUT.PUT_LINE('  Vehículos alquilados : ' || v_total_vehiculos);
+        DBMS_OUTPUT.PUT_LINE('Importe total facturado : ' || v_total_dinero);
+        DBMS_OUTPUT.PUT_LINE('Empleado con mas alquileres : ' || v_mejor_emp);
+    end loop;
+    close c_ciudades;
 END;
 /
