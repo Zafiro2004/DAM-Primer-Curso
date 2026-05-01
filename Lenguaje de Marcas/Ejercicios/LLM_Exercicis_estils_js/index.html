@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DOM: tocar estils amb JS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="layout">
+  <header class="topbar">
+    <h1>Estils amb JS (3 maneres)</h1>
+    <p class="muted">Fes clic als botons i completa les tasques de JS.</p>
+  </header>
+
+  <section id="banner" class="banner" data-variant="info">
+    <strong>Banner</strong>
+    <span id="bannerText">Mode info</span>
+  </section>
+
+  <main class="grid">
+    <section class="panel">
+      <h2>Controls</h2>
+
+      <div class="btnrow">
+        <button id="btnBanner">1) Banner warning</button>
+        <button id="btnBannerReset">1) Reset banner</button>
+      </div>
+
+      <div class="btnrow">
+        <button id="btnTheme">2) Mode fosc (toggle)</button>
+        <button id="btnCardState">3) Targeta “selected”</button>
+      </div>
+
+      <div class="btnrow">
+        <button id="btnProgress">4) +15% progrés</button>
+        <button id="btnShake">5) “Shake” targeta</button>
+      </div>
+
+      <hr/>
+
+      <p class="muted">
+        Objectiu: practicar canvis d’estils en JS amb tècniques diferents.
+      </p>
+    </section>
+
+    <section id="card" class="card">
+      <h2>Targeta</h2>
+      <p>Aquesta targeta canviarà d’estil segons els exercicis.</p>
+
+      <ul class="tags">
+        <li class="tag">DOM</li>
+        <li class="tag">CSS</li>
+        <li class="tag">JS</li>
+      </ul>
+
+      <div class="progressWrap">
+        <div class="progressBar" id="bar"></div>
+      </div>
+      <p class="muted"><span id="pct">0</span>%</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas con Estilos</title>
+    <style>
+        .contenedor {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .contenedor ul, .contenedor ol {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            list-style-position: inside;
+        }
+
+        .contenedor li {
+            margin: 10px 0;
+            padding: 15px;
+        }
+        #lista1 li {
+            background-color: #ADD8E6;
+            border-radius: 8px;
+        }
+
+        #lista2 li {
+            background-color: #90EE90;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">        
+        <h2>Lista 1 - Azul con bordes redondeados</h2>
+        <ul id="lista1">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+
+        <h2>Lista 2 - Verde con bordes cuadrados</h2>
+        <ol id="lista2">
+            <li>Elemento A</li>
+            <li>Elemento B</li>
+            <li>Elemento C</li>
+        </ol>
+    </div>
+</body>
+</html>

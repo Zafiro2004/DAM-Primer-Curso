@@ -1,0 +1,23 @@
+Nivel 1: Principiante (Consultas básicas y filtrado)
+1. Selección simple: Obtén todos los datos de la tabla de clubes.
+2. Filtro básico: Muestra el nombre y la posición de todos los jugadores que pertenecen al 'FC Barcelona'.
+3. Operadores de comparación: Lista los estadios que tienen una capacidad superior a 50,000 espectadores.
+4. Valores distintos: Obtén una lista única de todas las posiciones que existen en la tabla de jugadores.
+5. Ordenación: Muestra el nombre y el peso de los jugadores, ordenados de mayor a menor peso.
+
+Nivel 2: Intermedio (Funciones agregadas, Joins y Rangos)
+6. INNER JOIN: Muestra el nombre del jugador y su cantidad de goles. (Une FB_PLAYER y FB_STATISTICS).
+7. Operador BETWEEN: Encuentra a los jugadores que han marcado entre 5 y 15 goles.
+8. Operador LIKE: Lista los clubes cuyo nombre comience con la palabra 'Real'.
+9. Agregación y GROUP BY: Calcula el número total de jugadores que tiene cada equipo.
+10. Cláusula HAVING: Muestra los equipos que tienen un promedio de goles por jugador superior a 5.
+
+Nivel 3: Avanzado (Consultas complejas y lógica de negocio)
+11. Triple Join: Obtén el nombre del jugador, su equipo y sus tarjetas amarillas,
+pero solo para aquellos jugadores de clubes fundados antes de 1905.
+12. Subconsultas o IN: Selecciona los nombres de los jugadores que juegan en equipos que tienen más de 100,000 socios.
+13. LEFT JOIN: Muestra todos los clubes y la suma total de goles marcados por sus jugadores.
+Asegúrate de incluir clubes que no tengan goles registrados (deben aparecer con 0 o NULL).
+14. Operador UNION: Crea una lista única que contenga tanto los nombres de los estadios como los nombres de los clubes.
+15. Control de filas (Oracle): Selecciona los 3 jugadores con más minutos jugados.
+(Nota: En Oracle se usa FETCH FIRST 3 ROWS ONLY en lugar de LIMIT).

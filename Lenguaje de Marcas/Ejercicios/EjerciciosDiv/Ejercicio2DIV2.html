@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio DIVs y enlaces internos</title>
+    
+    <style>
+        /* Estilos generales */
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            line-height: 1.5;
+            background: #f0f0f0;
+            color: #111;
+        }
+
+        /* Div oscuro centrado con H1 y párrafo */
+        .hero {
+            width: 70%;
+            margin: 24px auto;     /* lo centra horizontalmente */
+            padding: 24px;
+            background: #222;      /* fondo oscuro */
+            color: #f5f5f5;        /* letra clara */
+            text-align: center;    /* centra el contenido dentro */
+            border-radius: 6px;
+        }
+        .hero h1 { margin: 0 0 8px 0; font-size: 1.8rem; }
+        .hero p { margin: 0; opacity: 0.95; }
+
+        /* Layout con floats: sidebar (20%) y contenido (80%) */
+        .layout { width: 100%; overflow: auto; padding: 16px; }
+        .sidebar {
+            float: left;
+            width: 20%;
+            background: #cce0ff;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        .sidebar ul { list-style: none; padding: 0; margin: 0; }
+        .sidebar li { margin: 8px 0; }
+        .sidebar a {
+            text-decoration: none;
+            color: #03396c;
+            font-weight: 600;
+        }
+
+        .content {
+            float: left;
+            width: 80%;
+            padding: 16px;
+        }
+        .section {
+            background: #fff;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+        .section h2 { margin-top: 0; }
+
+        /* Pequeña mejora para pantallas estrechas */
+        @media (max-width: 700px) {
+            .sidebar, .content { float: none; width: 100%; }
+            .hero { width: 92%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Asignaturas DAM</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat neque, sodales eu arcu quis, posuere commodo dui. Mauris et maximus est, ac posuere neque. Nam semper nisi risus, ut auctor sapien imperdiet id. Cras rutrum eros vel vulputate rutrum. Etiam volutpat neque in tristique placerat. Mauris id finibus orci, sed fermentum metus. Nam elementum lectus leo, at laoreet elit hendrerit in. Aliquam pretium ipsum quam, id mattis massa lobortis a. Etiam sit amet ante ac lectus vestibulum rhoncus nec ac ipsum.
+</p>
+    </div>
+
+    <div class="layout">
+        <nav class="sidebar" aria-label="Índice de apartados">
+            <ul>
+                <li><a href="#tema1">Programación</a></li>
+                <li><a href="#tema2">Lenguaje de Marcas</a></li>
+                <li><a href="#tema3">Digitalización</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <!-- cada apartado tiene id para enlaces internos -->
+            <section id="tema1" class="section">
+                <h2>Programación</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. La inteligencia artificial (IA) se refiere a la
+                </p>
+                <p>
+                    In hac habitasse platea dictumst. Suspendisse in turpis eu libero viverra fringilla ut ac diam. Integer lobortis sollicitudin vulputate. Nullam congue elementum enim at suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas porta nulla vitae felis tempus auctor in sed odio. Cras auctor mi et magna varius hendrerit. Aenean facilisis ante ac ex facilisis faucibus. In quis lacus arcu. Nullam nec tincidunt libero, in suscipit lorem. Morbi rutrum commodo mi vitae fermentum. Mauris pretium est enim, sit amet sodales urna malesuada a.
+                </p>
+                <p>
+                    Nunc vehicula, felis et condimentum gravida, justo felis bibendum diam, id iaculis nibh dolor sit amet felis. Sed sit amet velit sollicitudin, scelerisque lorem ut, commodo orci. Suspendisse non urna mauris. Donec feugiat eu sem vitae pellentesque. Duis mollis commodo lorem, vitae aliquet ex gravida eu. Quisque elementum sed velit vitae mollis. Nunc eu pellentesque tellus, viverra vestibulum diam. Fusce ac neque sed turpis euismod ultricies ac eget eros. Morbi vestibulum tortor eget tortor sagittis aliquam. Proin consequat ornare tincidunt. Sed ut bibendum augue, et facilisis mauris. Integer elementum mollis nulla nec dictum.
+
+
+                </p>
+            </section>
+
+            <section id="tema2" class="section">
+                <h2>Lenguaje de Marcas</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, inventore ab doloribus ratione rerum maiores sunt non. Explicabo ducimus itaque, maiores, veniam voluptas excepturi labore aliquid error ea pariatur soluta.
+                </p>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Sed vel urna at dui iaculis gravida.
+                </p>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sapiente magni quia sequi obcaecati beatae eligendi quas nisi accusamus laborum voluptates repudiandae similique provident ullam veniam nihil. Omnis, nostrum doloribus!
+                </p>
+            </section>
+
+            <section id="tema3" class="section">
+                <h2>Digitalización</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                </p>
+                <p>
+                    Fusce lobortis lorem at ipsum semper sagittis. Nam convallis pellentesque nisl. Integer malesuada commodo nulla. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.
+                </p>
+                <p>
+                    Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

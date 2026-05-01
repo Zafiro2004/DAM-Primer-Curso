@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio 8 - Posicionamiento (float colapsa)</title>
+    <style>
+        /* Contenedor con color de fondo (se colapsa porque sus hijos están flotados) */
+        .container {
+            background: #b3d4ff; /* fondo del padre que no se verá */
+            /* sin clearfix ni overflow, el contenedor tendrá altura 0 */
+            margin: 20px;
+            border: 1px solid #5b9cf6; /* para marcar el contenedor colapsado */
+        }
+
+        /* Dos columnas al 50% usando float:left */
+        .col {
+            float: left;
+            width: 50%;
+            height: 160px; /* altura para que las columnas sean visibles */
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .col.a { background: #ffe082; }
+        .col.b { background: #c8e6c9; }
+
+        /* Opcional: estilo del body para mejor visualización */
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+    </style>
+</head>
+<body>
+    <!-- Contenedor cuyo fondo se colapsa -->
+    <div class="container">
+        <div class="col a">Columna 1 (50%)</div>
+        <div class="col b">Columna 2 (50%)</div>
+        <!-- Sin elementos no flotantes ni clearfix, el contenedor tendrá altura 0 -->
+    </div>
+</body>
+</html>

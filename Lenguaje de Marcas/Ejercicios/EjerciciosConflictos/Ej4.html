@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #003d82;
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Sección Principal */
+        .main-section {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-image {
+            flex: 0 0 40%;
+            padding: 1rem;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-info {
+            flex: 1;
+            margin: 1.5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #003d82;
+        }
+
+        .main-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Bloques de Información */
+        .info-blocks {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            flex: 1;
+            min-width: 250px;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .block h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .block p {
+            font-size: 0.95rem;
+        }
+
+        .block-1 {
+            background-color: #e8f4f8;
+        }
+
+        .block-2 {
+            background-color: #c8e6c9;
+            color: #1b5e20;
+        }
+
+        .block-3 {
+            background-color: #b3e5fc;
+            color: #01579b;
+            border: 3px solid #0277bd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .main-section {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .main-image {
+                flex: 0 0 100%;
+                padding: 0;
+            }
+
+            .main-info {
+                margin: 1rem 0;
+            }
+
+            .main-info h1 {
+                font-size: 2rem;
+            }
+
+            .info-blocks {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .block {
+                min-width: 100%;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"> Mi Perfil</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="main-section">
+        <div class="main-image">
+            <img src="https://via.placeholder.com/300x300?text=Foto+de+Perfil" alt="Foto de perfil">
+        </div>
+        <div class="main-info">
+            <h1>Álex De Dios Pallicer </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nam!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti accusantium eligendi neque recusandae assumenda odio soluta voluptate beatae voluptas accusamus, doloremque perspiciatis animi officiis? Doloremque, sint? Animi nobis suscipit exercitationem molestias quis explicabo voluptates eius minus corporis a? Odit ipsum alias nulla fugiat id dolorum facilis pariatur eos in! Minima?</p>
+        </div>
+    </section>
+
+    <!-- Sección de Información -->
+    <section class="info-blocks">
+        <div class="block block-1">
+            <h3> Proyectos</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, veritatis.</p>
+        </div>
+        <div class="block block-2">
+            <h3> Experiencia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="block block-3">
+            <h3> Habilidades</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mi Perfil. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

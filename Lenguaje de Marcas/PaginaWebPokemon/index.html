@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokédex y Creador de Equipos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/app.js" defer></script>
+
+</head>
+<body>
+<header>
+    <h1>Creador de equipos Pokémon</h1>
+    <p>Busca, filtra y crea tu equipo ideal de 6 Pokémon.</p>
+</header>
+
+<div class="contenedor-app">
+    <section class="panel-pokedex">
+        <div class="controles">
+            <input type="text" id="buscador" placeholder="Busca un Pokémon...">
+            <div id="filtros" class="filtros">
+                <button class="filtro-btn" data-type="all">Todos</button>
+                <button class="filtro-btn" data-type="fuego">Fuego</button>
+                <button class="filtro-btn" data-type="agua">Agua</button>
+                <button class="filtro-btn" data-type="planta">Planta</button>
+                <button class="filtro-btn" data-type="electrico">Electrico</button>
+                <button class="filtro-btn" data-type="veneno">Veneno</button>
+                <button class="filtro-btn" data-type="psiquico">Psiquico</button>
+                <button class="filtro-btn" data-type="normal">Normal</button>
+                <button class="filtro-btn" data-type="hada">Hada</button>
+                <button class="filtro-btn" data-type="fantasma">Fantasma</button>
+                <button class="filtro-btn" data-type="dragon">Dragon</button>
+                <button class="filtro-btn" data-type="volador">Volador</button>
+                <button class="filtro-btn" data-type="tierra">Tierra</button>
+                <button class="filtro-btn" data-type="lucha">Lucha</button>
+                <button class="filtro-btn" data-type="hielo">Hielo</button>
+                <button class="filtro-btn" data-type="roca">Roca</button>
+                <button class="filtro-btn" data-type="bicho">Bicho</button>
+                <button class="filtro-btn" data-type="acero">Acero</button>
+            </div>
+        </div>
+        <div id="lista-pokemon" class="lista-pokemon">
+        </div>
+    </section>
+    <aside class="panel-equipo">
+        <div class="cabecera-equipo">
+            <h2>Mi Equipo</h2>
+            <span id="contador-equipo" class="contador">0/6</span>
+        </div>
+
+        <div id="slots-equipo" class="slots-equipo">
+            <p class="empty-message">Aún no has añadido ningún Pokémon.</p>
+        </div>
+    </aside>
+</div>
+</body>
+</html>

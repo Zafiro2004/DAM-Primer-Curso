@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #ef5350; /* Rojo Pokémon */
+    --bg-color: #f4f4f9;
+    --panel-bg: #ffffff;
+    --text-color: #333333;
+    --border-radius: 8px;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--primary-color);
+}
+.contenedor-app {
+    display: flex;
+    gap: 20px; /* Espacio entre el panel izquierdo y derecho */
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start; /* Para que los paneles no se estiren a lo alto si uno es más corto */
+}
+.panel-pokedex, .panel-equipo{
+    background-color: var(--panel-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+.panel-pokedex{
+    flex: 2;
+}
+.panel-equipo{
+    flex: 1;
+    position: sticky; /* El panel del equipo te acompañe al subir o bajar*/
+    top: 20px;
+}
+.controles{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+#buscador{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.filtros{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Si hay muchos botones, saltan a la siguiente línea */
+}
+
+.filtro-btn{
+    padding: 8px 12px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.filtro-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.lista-pokemon{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+.carta-pokemon{
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.carta-info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.add-btn {
+    margin-top: auto;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.carta-pokemon:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+.pokemon-image {
+    width: 80px; /* Hacemos el contenedor un poco más pequeño para estos sprites */
+    height: 80px;
+    object-fit: contain;
+    margin: 10px 0; /* Un poco de aire arriba y abajo */
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    background-color: #777; /* Color por defecto */
+}
+/* Colores por tipo actualizados y ampliados */
+.type-fuego { background-color: #ff9d5c; }
+.type-agua { background-color: #5cafff; }
+.type-planta { background-color: #7bd55b; }
+.type-electrico { background-color: #ffd65c; color: #333; }
+.type-veneno { background-color: #b55cff; }
+.type-psiquico { background-color: #ff5ca8; }
+.type-normal { background-color: #a8a878; }
+.type-hada { background-color: #ee99ac; color: #333; }
+.type-fantasma { background-color: #705898; }
+.type-dragon { background-color: #7038f8; }
+.type-volador { background-color: #a890f0; }
+.type-tierra { background-color: #e0c068; }
+.type-lucha { background-color: #c03028; }
+.type-hielo { background-color: #98d8d8; color: #333; }
+.type-roca { background-color: #b8a038; }
+.type-bicho { background-color: #a8b820; color: #333; }
+.type-acero { background-color: #b8b8d0; color: #333; }
+
+.cabecera-equipo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+.empty-message {
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.miembro-equipo {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 12px;
+    transition: transform 0.2s;
+}
+.miembro-equipo:hover {
+    transform: translateX(-5px);
+    border-color: var(--primary-color);
+}
+.miembro-equipo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid #ddd;
+}
+.member-info{
+    flex-grow: 1;
+}
+.member-info h4 {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.member-info span {
+    font-size: 11px;
+    color: #666;
+}
+.remove-btn{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+.remove-btn:hover {
+    background-color: #cc0000;
+}
+.filtro-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-color: var(--primary-color);
+}
+.wikidex-link {
+    text-decoration: none; /* Quita el subrayado azul por defecto */
+    color: inherit; /* Hereda el color del texto original (gris oscuro) */
+    display: block; /* Asegura que el área clicable ocupe todo el espacio */
+}
+
+/* Efectos al pasar el ratón por encima del enlace */
+.wikidex-link:hover .pokemon-image {
+    transform: scale(1.15); /* Hace el GIF ligeramente más grande */
+    transition: transform 0.2s ease-in-out;
+}
+
+.wikidex-link:hover .pokemon-nombre {
+    color: var(--primary-color); /* El nombre se vuelve rojo Pokémon */
+    transition: color 0.2s;
+}

@@ -1,0 +1,5 @@
+<!ELEMENT alunnes (alunne+)>
+<!ELEMENT alunne (nom, grup)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT grup (#PCDATA)>
+<!ATTLIST alunme id ID URLQUIRED>

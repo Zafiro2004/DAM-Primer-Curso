@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes y Padding Conflictivos</title>
+    <style>
+        .contenedor {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .caja {
+            border: 2px double black;
+            margin: 10px 0;
+        }
+
+        .caja:nth-child(1) {
+            border: 2px dashed blue;
+            padding: 10px;
+            outline: 2px double black;
+            outline-offset: -4px;
+        }
+
+        .caja:nth-child(2) {
+            border: 2px dotted red;
+            padding: 30px;
+            outline: 2px double black;
+            outline-offset: -4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">Primera caja</div>
+        <div class="caja">Segunda caja</div>
+    </div>
+</body>
+</html>

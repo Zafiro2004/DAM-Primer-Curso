@@ -1,0 +1,3 @@
+public enum EstatMissio {
+    PLANIFICADA,EN_CURS,COMPLETADA,ABORTADA
+}

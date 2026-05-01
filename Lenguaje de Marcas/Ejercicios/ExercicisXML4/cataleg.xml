@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cataleg
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="cataleg.xsd">
+    <cotxe id="c1" combustible="gasolina" moneda="EUR">
+        <marca>Seat</marca>
+        <model>Ibiza</model>
+        <any>2020</any>
+        <preu>14500</preu>
+        <extres>
+            <extra>Bluetooth</extra>
+            <extra>Càmera posterior</extra>
+        </extres>
+    </cotxe>
+    <cotxe id="c2" combustible="electric" estat="reservat" moneda="EUR">
+        <marca>Tesla</marca>
+        <model>Model 3</model>
+        <any>2023</any>
+        <preu>38900</preu>
+        <extres>
+            <extra>Autopilot</extra>
+        </extres>
+    </cotxe>
+    <cotxe id="c3" combustible="diesel" moneda="EUR">
+        <marca>Volkswagen</marca>
+        <model>Golf</model>
+        <any>2019</any>
+        <preu>17900</preu>
+    </cotxe>
+    <cotxe id="c4" combustible="hibrid" moneda="EUR">
+        <marca>Toyota</marca>
+        <model>Corolla</model>
+        <any>2022</any>
+        <preu>23000</preu>
+    </cotxe>
+    <cotxe id="c6" combustible="diesel" moneda="EUR">
+        <marca>Kia</marca>
+        <model>Rio</model>
+        <preu>6000</preu>
+        <any>2018</any>
+    </cotxe>
+
+
+</cataleg>

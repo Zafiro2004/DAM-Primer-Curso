@@ -1,0 +1,144 @@
+:root{
+  --bg:#f6f7fb;
+  --fg:#12131a;
+  --card:#ffffff;
+  --muted:#606680;
+  --line:#e6e8f0;
+
+  --info-bg:#e8f2ff;
+  --info-fg:#0b3d91;
+
+  --warn-bg:#fff3e6;
+  --warn-fg:#8a4b00;
+
+  --ok-bg:#e9fff0;
+  --ok-fg:#0b6b2a;
+
+  --accent:#2b59ff;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--fg);
+}
+
+.layout{
+  padding:18px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.topbar{
+  padding:14px 14px 6px;
+}
+.muted{ color:var(--muted); }
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:16px;
+  align-items:start;
+}
+
+.panel, .card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+  box-shadow: 0 6px 18px rgba(20,20,40,.06);
+}
+
+.btnrow{
+  display:flex;
+  gap:10px;
+  margin:10px 0;
+  flex-wrap:wrap;
+}
+button{
+  border:1px solid var(--line);
+  background:#fff;
+  padding:10px 12px;
+  border-radius:12px;
+  cursor:pointer;
+}
+button:hover{ border-color:#cdd2e6; }
+
+.banner{
+  margin: 10px 14px 16px;
+  border-radius:14px;
+  padding:12px 14px;
+  border:1px solid var(--line);
+}
+
+/* El banner canvia d’estil segons un “variant” definit al CSS */
+.banner[data-variant="info"]{
+  background:var(--info-bg);
+  color:var(--info-fg);
+}
+.banner[data-variant="warn"]{
+  background:var(--warn-bg);
+  color:var(--warn-fg);
+}
+.banner[data-variant="ok"]{
+  background:var(--ok-bg);
+  color:var(--ok-fg);
+}
+
+.tags{
+  list-style:none;
+  padding:0;
+  display:flex;
+  gap:8px;
+}
+.tag{
+  border:1px solid var(--line);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.card.selected{
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(43,89,255,.18);
+}
+
+.progressWrap{
+  margin-top:14px;
+  height:12px;
+  background:#eef0f7;
+  border-radius:999px;
+  overflow:hidden;
+  border:1px solid var(--line);
+}
+.progressBar{
+  height:100%;
+  width:0%;
+  background: var(--accent);
+  transition: width .25s ease;
+}
+
+/* Mode fosc: s’activa quan el BODY té “layout dark” */
+body.dark{
+  --bg:#0f1220;
+  --fg:#f1f3ff;
+  --card:#171a2b;
+  --muted:#a6abca;
+  --line:#2a2f4a;
+
+  --info-bg:#16233b;
+  --info-fg:#cfe0ff;
+
+  --warn-bg:#3b2a16;
+  --warn-fg:#ffe1c2;
+
+  --ok-bg:#153020;
+  --ok-fg:#c9ffd9;
+}
+
+@media (max-width: 860px){
+  .grid{ grid-template-columns: 1fr; }
+}

@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "755aa629cba34907",
+    "type": "split",
+    "children": [
+      {
+        "id": "8877bb4cf7706685",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49621c31c9542851",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.1 - Protocolos y Estándares.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "5.1.1 - Protocolos y Estándares"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e8a7d10ae0fa83ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "6cde033f47cd37ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc75224e602334db",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "bcb548c922016b9c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 447.5
+  },
+  "right": {
+    "id": "59b2c0414f692d3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed3a502649454f58",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "081ea25691144e7e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "fccaa2a1a4d43ce0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DAM-1/LenguajeMarcas/JavaScript/JavaScript.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de JavaScript"
+            }
+          },
+          {
+            "id": "0683a6ebed1a2336",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "DAM-1/LenguajeMarcas/JavaScript/JavaScript.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de JavaScript"
+            }
+          },
+          {
+            "id": "635e85c252d5dbe8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "d503817d5474140d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "d1394746b41bdf88",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Ejercicio.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Ejercicio"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 386.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "export-graph-view:Export graph view": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "49621c31c9542851",
+  "lastOpenFiles": [
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Tema 5 - Sistemas Informáticos en Red.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1 - Redes Informáticas.md",
+    "To-Do.md",
+    "DAM-1/Práctica Python.md",
+    "DAM-1/Programación/Programación.md",
+    "DAM-1/Programación/Teoría/Unidad 5 - Lectura y escritura de archivos en Java/Unidad 5 - Lectura y escritura de archivos en Java.md",
+    "DAM-1/Programación/Python/Diccionarios.md",
+    "DAM-1/Bases de datos/Unit 5 - Triggers/Views y delimitadores en MySQL.md",
+    "DAM-1/Bases de datos/Unit 5 - Triggers/Unit 5 - Triggers.md",
+    "DAM-1/Bases de datos/Unit 5 - Triggers/Introducción a Triggers en MySQL.md",
+    "DAM-1/Sistemas informáticos/Sistemas informáticos.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.5 - Configuración de Red.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red.zip",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.1 - Redes Cableadas.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.6 - Monitorización y Simulación.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.6 - Servidores DHCP y DNS.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.5 - Subnetting.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.4 - Puerta de Enlace.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.3 - Clases de Redes IPv4.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.2 - Máscara de Subred.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.1 - Direcciones IPv4 e IPv6.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3 - Direccionamiento IP.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.4 - Protocolos Utilizados en las Redes.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.3 - Comparación OSI y TCP-IP.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.1 - Modelo OSI.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2 - Modelos de Referencia.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.3 - Mapas Físicos y Lógicos.md",
+    "DAM-1/Programación/Python/_PythonNotesForProfessionals.pdf",
+    "DAM-1/Bases de datos/Unit 5 - Triggers",
+    "DAM-1/LenguajeMarcas/XML",
+    "_Assets/_DAMimg/Sistemas/Pasted image 20260425180345.png",
+    "_Assets/Pasted image 20260121204511.png",
+    "DAM-1/Programación/Teoría/Unidad 5 - Lectura y escritura de archivos en Java",
+    "DAM-1/Programación/Sin nombre",
+    "Pasted image 20260425180048.png",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/obsidian",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red",
+    "DAM-1/Sistemas informáticos/Unidad 5/obsidian",
+    "DAM-1/Sistemas informáticos/Unidad 5",
+    "_Assets/_DAMimg/Programación Teoría/Diagrama Apartado B.drawio.png",
+    "_Assets/_DAMimg/Programación Teoría/Diagrama Apartado A.drawio.png",
+    "_Assets/_DAMimg/IPO/Pasted image 20260330180756.png",
+    "_Assets/_DAMimg/IPO/Pasted image 20260330180731.png",
+    "_Assets/_DAMimg/IPO/Pasted image 20260330180715.png",
+    "_Assets/_DAMimg/IPO/Pasted image 20260330180712.png",
+    "_Assets/_DAMimg/IPO/Pasted image 20260330180644.png",
+    "DAM-1/Itinerario Personal para la Empleabilidad/Teoria/Sin título.canvas",
+    "Untitled.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas"
+  ]
+}

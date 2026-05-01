@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EjerciciosBucles">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/EjerciciosBucles.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

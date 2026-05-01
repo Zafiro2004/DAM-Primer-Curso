@@ -1,0 +1,91 @@
+/* Importar dos fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Fuente para párrafos */
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif; /* Fuente para encabezados */
+    color: #2c3e50;
+}
+
+/* Navegación horizontal */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #34495e;
+    padding: 10px;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Clase para resaltar la página actual */
+nav ul li a.activo {
+    color: yellow; 
+    font-weight: bold;
+}
+
+/* Efecto hover en enlaces */
+nav ul li a:hover {
+    color: #3498db;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+/* Layout con Flexbox */
+main {
+    display: flex;
+    flex-direction: row; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#contenido-principal {
+    flex: 3; 
+    padding-right: 20px;
+}
+
+aside {
+    flex: 1; /* Sección a la derecha */
+    background-color: #e1effa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Estilos de la tabla */
+.tabla-autor {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-autor th, .tabla-autor td {
+    border: 1px solid #2c3e50;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-autor th {
+    background-color: #34495e;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}

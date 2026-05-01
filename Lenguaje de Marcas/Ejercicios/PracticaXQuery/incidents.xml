@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<incidents>
+    <incident id="i1" risc="alt" estat="obert">
+        <titol>Intent de phishing</titol>
+        <sistema>correu</sistema>
+        <origen>extern</origen>
+        <afectats>24</afectats>
+        <tempsResposta>35</tempsResposta>
+        <tecnic>Laia</tecnic>
+    </incident>
+
+    <incident id="i2" risc="mitja" estat="tancat">
+        <titol>Contrasenya feble detectada</titol>
+        <sistema>intranet</sistema>
+        <origen>intern</origen>
+        <afectats>3</afectats>
+        <tempsResposta>12</tempsResposta>
+        <tecnic>Pau</tecnic>
+    </incident>
+
+    <incident id="i3" risc="critic" estat="obert">
+        <titol>Possible fuga de dades</titol>
+        <sistema>base-dades</sistema>
+        <origen>extern</origen>
+        <afectats>120</afectats>
+        <tempsResposta>60</tempsResposta>
+        <tecnic>Marc</tecnic>
+    </incident>
+
+    <incident id="i4" risc="baix" estat="tancat">
+        <titol>Actualització pendent</titol>
+        <sistema>servidor-web</sistema>
+        <origen>intern</origen>
+        <afectats>1</afectats>
+        <tempsResposta>8</tempsResposta>
+        <tecnic>Laia</tecnic>
+    </incident>
+
+    <incident id="i5" risc="alt" estat="obert">
+        <titol>Malware detectat</titol>
+        <sistema>ordinadors</sistema>
+        <origen>extern</origen>
+        <afectats>18</afectats>
+        <tempsResposta>42</tempsResposta>
+        <tecnic>Pau</tecnic>
+    </incident>
+
+    <incident id="i6" risc="mitja" estat="pendent">
+        <titol>Accés sospitós</titol>
+        <sistema>vpn</sistema>
+        <origen>extern</origen>
+        <afectats>7</afectats>
+        <tempsResposta>25</tempsResposta>
+        <tecnic>Neus</tecnic>
+    </incident>
+
+    <incident id="i7" risc="baix" estat="obert">
+        <titol>Port insegur detectat</titol>
+        <sistema>xarxa</sistema>
+        <origen>intern</origen>
+        <afectats>2</afectats>
+        <tempsResposta>15</tempsResposta>
+        <tecnic>Marc</tecnic>
+    </incident>
+
+    <incident id="i8" risc="critic" estat="tancat">
+        <titol>Atac de força bruta</titol>
+        <sistema>servidor-web</sistema>
+        <origen>extern</origen>
+        <afectats>45</afectats>
+        <tempsResposta>50</tempsResposta>
+        <tecnic>Neus</tecnic>
+    </incident>
+</incidents>

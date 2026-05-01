@@ -1,0 +1,1 @@
+![[Diagrama EjerciciosRefuerzo1.1.png]]

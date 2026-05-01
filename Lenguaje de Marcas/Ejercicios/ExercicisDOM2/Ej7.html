@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ej 7</title>
+</head>
+<body>
+<ul id="llista">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+<script>
+    const llista = document.getElementById("llista");
+    const contenido = llista.querySelectorAll("li");
+    contenido[1].textContent = "BB";
+
+    llista.removeChild(llista.lastElementChild);
+</script>
+</body>
+</html>

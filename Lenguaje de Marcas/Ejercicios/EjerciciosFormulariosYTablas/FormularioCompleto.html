@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title> Formulario Completo </title>
+</head>
+<body>
+    <h1> Formulario Completo </h1>
+    <form>
+        <label for="nombre"> Nombre y apellidos: </label>
+        <input type="text" id="nombre" name="nombre" required> <br>
+        <label for="email"> Correo electrónico: </label>
+        <input type="email" id="email" name="email" required> <br>
+        <label for="genero"> Genero: </label>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino"> Masculino </label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino"> Femenino </label> <br>
+        <label for="pais"> País: </label>
+        <select id="pais" name="pais">
+            <option value="espana"> España </option>
+            <option value="francia"> Francia </option>
+            <option value="italia"> Italia </option>
+            <option value="alemania"> Alemania </option>
+            <option value="portugal"> Portugal </option>
+        </select> <br>
+        <label for="comentarios"> Comentarios: </label> <br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea> <br>
+        <button type="submit"> Enviar </button>
+        <button type="reset"> Resetear </button>
+    </form>
+</body>       
+</html>

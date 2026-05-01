@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .titulo{
+        border: 1px solid black;
+        background: aquamarine;
+        padding: 10px;
+        color: white;
+    }
+
+    .tituloGrande{
+        font-size: 60px;
+        color: blueviolet;
+    }
+</style>
+
+<h1 id="titulo">Título de mi página WEB</h1>
+<script>
+    let titulo= document.getElementById("titulo");
+    //Método 1
+    titulo.className ="titulo tituloGrande";
+    //Método 2
+    titulo.style.color = "black";
+    titulo.style.fontSize = "80px";
+    titulo.style.background = "blue";
+</script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c348c048-5b24-4386-8762-9c74f9266557" name="Changes" comment="Declaración de la clase Guitarra añadiendo los atributos, constructor y método" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="claseGuitarra" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zafiro2004&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Zafiro2004/EjercicioImplementacionepaso.git&quot;,
+    &quot;accountId&quot;: &quot;4b848442-fdac-4316-91a4-075d74fc30d9&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3Au0ZCvmQU0oztOgktxoRtEtS4V" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alexd/OneDrive/Alex/DAM2526/Programacion/Ejercicios/EjercicioImplementacionRepaso",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/alexd/OneDrive/Alex/DAM2526/Programacion/Ejercicios/EjercicioImplementacionepaso/src/Main.java",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c348c048-5b24-4386-8762-9c74f9266557" name="Changes" comment="" />
+      <created>1773427204837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773427204837</updated>
+      <workItem from="1773427211204" duration="192000" />
+      <workItem from="1773427514230" duration="4182000" />
+    </task>
+    <task id="LOCAL-00001" summary="Quitar contenido del main">
+      <option name="closed" value="true" />
+      <created>1773427368784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773427368784</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Quitar contenido del main">
+      <option name="closed" value="true" />
+      <created>1773427555268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773427555268</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <option name="closed" value="true" />
+      <created>1773427573034</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773427573034</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creación de clases vacias">
+      <option name="closed" value="true" />
+      <created>1773428536988</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773428536988</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Declaración de la clase Alumno añadiendo sus atributos y constructor">
+      <option name="closed" value="true" />
+      <created>1773428822998</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773428822998</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Declaración de la clase Profesor añadiendo sus atributos y constructor">
+      <option name="closed" value="true" />
+      <created>1773429144376</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773429144376</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Estados de la enumeración.">
+      <option name="closed" value="true" />
+      <created>1773430805001</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773430805001</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Declaración de la clase Instrument añadiendo los atributos, constructor y método">
+      <option name="closed" value="true" />
+      <created>1773431222323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773431222323</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Declaración de la clase Guitarra añadiendo los atributos, constructor y método">
+      <option name="closed" value="true" />
+      <created>1773431412652</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1773431412652</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Quitar contenido del main" />
+    <MESSAGE value="Cambios de nombre" />
+    <MESSAGE value="Creación de clases vacias" />
+    <MESSAGE value="Declaración de la clase Alumno añadiendo sus atributos y constructor" />
+    <MESSAGE value="Declaración de la clase Profesor añadiendo sus atributos y constructor" />
+    <MESSAGE value="Estados de la enumeración." />
+    <MESSAGE value="Declaración de la clase Instrument añadiendo los atributos, constructor y método" />
+    <MESSAGE value="Declaración de la clase Guitarra añadiendo los atributos, constructor y método" />
+    <option name="LAST_COMMIT_MESSAGE" value="Declaración de la clase Guitarra añadiendo los atributos, constructor y método" />
+  </component>
+</project>

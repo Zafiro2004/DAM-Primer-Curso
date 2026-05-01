@@ -1,0 +1,18 @@
+# Palabrejas DIGI
+- **ERP:** Un ERP (_Enterprise Resource Planning_ o Planificación de Recursos Empresariales) es un sistema de software que integra y gestiona los procesos centrales de una empresa.
+- **ADSL:** La conexión **ADSL** (_Asymmetric Digital Subscriber Line_) es una tecnología de banda ancha que transmite datos digitales a través del par de cobre de las líneas telefónicas tradicionales, permitiendo navegar por internet y hablar por teléfono simultáneamente.
+- **KPI:** Un KPI (Key Performance Indicator), o indicador clave de desempeño, es una métrica fundamental utilizada para evaluar el éxito, rendimiento y progreso de una empresa, proyecto o proceso hacia objetivos específicos.
+- **CRM:** Un CRM (Customer Relationship Management) es una plataforma de software que centraliza la gestión de relaciones con clientes y prospectos, simplificando procesos internos como ventas, marketing y atención al cliente.
+- **KVM:** KVM (Kernel-based Virtual Machine) es una tecnología de virtualización de código abierto integrada directamente en el núcleo Linux, convirtiéndolo en un hipervisor de tipo 1.
+- **LXC:** LXC (Linux Containers) es una tecnología de virtualización ligera a nivel de sistema operativo que permite ejecutar múltiples sistemas Linux aislados (contenedores) sobre un mismo núcleo host.
+- **Active Directory:** Active Directory (AD) es un servicio de directorio de Microsoft que centraliza la gestión de usuarios, equipos y recursos en redes Windows, facilitando la autenticación y autorización segura.
+- **Hub and spoke:** El modelo hub and spoke (centro y radios) es un sistema de distribución y organización logística que centraliza las operaciones en un nodo principal (hub) desde el cual se gestionan los envíos a múltiples puntos periféricos (spokes o radios).
+- **SD-WAN:** SD-WAN (Software-Defined Wide Area Network) es una tecnología que utiliza software para gestionar y optimizar redes de área amplia (WAN) de manera inteligente y centralizada.
+- **Túnel IPsec:** Un túnel IPsec es una conexión segura y cifrada entre dos puntos (como routers o firewalls) a través de Internet, que encapsula paquetes IP originales dentro de nuevos paquetes, garantizando la privacidad de los datos en redes públicas.
+- **Túnel IPsec failover:** El failover de túnel IPsec proporciona alta disponibilidad para VPNs de sitio a sitio.
+- **Switch Core L3** permiten la transferencia de datos entre varios dispositivos simultáneamente entre LAN, VLAN y subredes.
+- **Switch de Acceso L2:** conecta dispositivos finales (PCs, impresoras, APs) a la red local (LAN) utilizando direcciones MAC.
+- **QoS:** La Calidad de Servicio (QoS) es un conjunto de tecnologías de red que gestionan y priorizan el tráfico de datos para asegurar el rendimiento de aplicaciones críticas (voz, video, juegos) frente a tráfico de menor prioridad (descargas).
+- **Cabina SAN:** dispositivos especializados independientes de los servidores
+
+Página 14-15

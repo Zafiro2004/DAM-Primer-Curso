@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lliga</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Lliga</h1>
+    <p>Consola: <code>lliga.addPartit(1,2,2,0)</code>, <code>lliga.delPartit(1)</code>, <code>lliga.addEquip("Nou")</code>, <code>lliga.delEquip(1)</code></p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Stats</h2>
+      <div id="stats"></div>
+    </section>
+
+    <section class="card">
+      <h2>Classificació</h2>
+      <table id="classificacio">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Equip</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PE</th>
+            <th>PP</th>
+            <th>GF</th>
+            <th>GC</th>
+            <th>DG</th>
+            <th>PTS</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyEquips"></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Partits</h2>
+      <ul id="llistaPartits"></ul>
+    </section>
+  </main>
+</body>
+</html>

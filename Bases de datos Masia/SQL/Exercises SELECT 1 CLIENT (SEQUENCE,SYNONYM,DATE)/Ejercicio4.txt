@@ -1,0 +1,17 @@
+1. In the DEPARTMENT table: Add the UNIQUE constraint
+For a column to be referenced by another table as a foreign key, that column must be unique (or be the primary key).
+Currently, DEPARTMENT_CODE is the primary key, but if we want to reference NAME, we must ensure its uniqueness.
+
+Restriction to add: UNIQUE on the Name column.
+
+Reason: Without this restriction, the database would not allow STAFF.Job to point to DEPARTMENT.Name, as there would be
+no guarantee that each department name is unique.
+
+2. In the STAFF table: Modify the CHECK restriction to a FOREIGN KEY
+The CHECK constraint (Job IN (...)) that we initially defined is static and only allows values manually written in the
+code (director, analyst, etc.).
+
+Constraint to modify: Remove the CHECK and replace it with a Foreign Key (FOREIGN KEY) that points to DEPARTMENT(Name).
+
+Reason: This dynamically links both tables. If a new department called "Research" is created in the future,
+"Research" automatically becomes a valid job in the STAFF table without having to alter the table structure.

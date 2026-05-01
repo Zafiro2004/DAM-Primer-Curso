@@ -1,0 +1,16 @@
+INSERT INTO Vol3_Providers(Code, Name) VALUES('HAL','Clarke Enterprises');
+INSERT INTO Vol3_Providers(Code, Name) VALUES('RBT','Susan Calvin Corp.');
+INSERT INTO Vol3_Providers(Code, Name) VALUES('TNBC','Skellington Supplies');
+INSERT INTO Vol3_Pieces(Code, Name) VALUES(1,'Sprocket');
+INSERT INTO Vol3_Pieces(Code, Name) VALUES(2,'Screw');
+INSERT INTO Vol3_Pieces(Code, Name) VALUES(3,'Nut');
+INSERT INTO Vol3_Pieces(Code, Name) VALUES(4,'Bolt');
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(1,'HAL',10);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(1,'RBT',15);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(2,'HAL',20);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(2,'RBT',15);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(2,'TNBC',14);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(3,'RBT',50);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(3,'TNBC',45);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(4,'HAL',5);
+INSERT INTO Vol3_Provides(Piece, Provider, Price) VALUES(4,'RBT',7);

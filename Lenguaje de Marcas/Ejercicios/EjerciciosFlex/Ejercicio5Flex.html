@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 Flex</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: flex;
+            height: 100vh;
+            gap: 2px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #f08080;
+            padding: 12px 24px;
+        }
+
+        .contenido {
+            flex: 4;
+            background-color: #add8e6;
+            padding: 12px 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">contenido lateral</div>
+        <div class="contenido">Esto sería el contenido principal</div>
+    </div>
+</body>
+
+</html>

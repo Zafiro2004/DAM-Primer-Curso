@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cabecera {
+            height: 24px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgoldenrod;
+            color: black;
+            padding: 10px 0;
+        }
+
+        .cuerpo {
+            flex: 1;
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 24px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            border: 1px solid #ddd;
+            color: white;
+        }
+
+        .centro {
+            flex: 2;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecera">Titulo de la página</div>
+    <div class="cuerpo">
+        <div class="sidebar">Lateral izquierdo</div>
+        <div class="centro">Zona central</div>
+        <div class="sidebar">Lateral derecho</div>
+    </div>
+</body>
+
+</html>

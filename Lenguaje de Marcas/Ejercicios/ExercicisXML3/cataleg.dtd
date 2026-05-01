@@ -1,0 +1,12 @@
+<!ELEMENT cataleg (cotxe+)>
+<!ELEMENT cotxe (marca,model,any,preu,extres?)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT extra (#PCDATA)>
+<!ELEMENT extres (extra+)>
+<!ATTLIST cotxe id ID #REQUIRED>
+<!ATTLIST cotxe combustible (gasolina | diesel | hibrid | electric) #IMPLIED>
+<!ATTLIST cotxe estat (disponible | reservat | venut) "disponible" >
+<!ATTLIST cotxe moneda CDATA #FIXED "EUR">

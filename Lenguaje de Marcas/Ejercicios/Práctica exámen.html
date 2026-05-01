@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  defer>
+        document.querySelector(".persona").textContent = "X";
+        document.querySelectorAll(".persona").forEach(p => {
+            p.textContent = p.textContent.toLowerCase();
+        });
+
+    </script>
+</head>
+<body>
+<div id="zona">
+    <p class="persona" data-edat="18">Ana</p>
+    <p class="persona" data-edat="21">Pau</p>
+    <p class="persona" data-edat="16">Mia</p>
+</div>
+
+<input id="nom" value="Inicial">
+<a id="link" href="/ruta">Enllaç</a>
+
+<ul id="llista">
+    <li>un</li>
+    <li>dos</li>
+</ul>
+
+<button id="afegir">Afegir</button>
+<form id="f">
+    <input id="camp" />
+    <button>Enviar</button>
+</form>
+
+
+</body>
+</html>

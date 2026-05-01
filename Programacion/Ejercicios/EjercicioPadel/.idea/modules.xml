@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EjercicioPadel.iml" filepath="$PROJECT_DIR$/EjercicioPadel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjercicioPadelSol/EjercicioPadelSol.iml" filepath="$PROJECT_DIR$/EjercicioPadelSol/EjercicioPadelSol.iml" />
+    </modules>
+  </component>
+</project>

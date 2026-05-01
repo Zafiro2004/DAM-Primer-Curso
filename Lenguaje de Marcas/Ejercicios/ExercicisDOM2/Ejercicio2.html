@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+<ul id="llista">
+  <li class="item">A</li>
+  <li class="item">B</li>
+</ul>
+
+<script>
+  const elms1 = document.querySelectorAll(".item");
+  const elms2 = document.getElementsByClassName("item");
+  console.log("abans", elms1.length, elms2.length);
+  const node = document.createElement("li");
+  document.getElementById("llista").appendChild(node);
+  console.log("després", elms1.length, elms2.length);
+
+</script>
+</body>
+</html>

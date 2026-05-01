@@ -1,0 +1,37 @@
+
+h1 {
+    color:blue;
+}
+h2 {
+    font-size: 22px;
+    font: arial;
+    color:darkgrey;
+}
+p{
+    margin-bottom: 15px;
+    color: #333333;
+}
+ul{
+    list-style-type: square;
+    color:darkgreen;
+}
+img{
+    border: 3px solid black;
+    width: 300px;
+}
+a{
+    color:red;
+}
+a:hover{
+    color:orange;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    background-color: lightgrey;
+    padding: 8px;
+}
+td{
+    padding: 6px;
+}

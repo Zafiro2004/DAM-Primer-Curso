@@ -1,0 +1,83 @@
+# Fundamentos de Sistemas Informáticos en Red
+
+## Sistemas Informáticos en Red, 5 nodos secundarios
+  - Conceptos de Comunicación, 3 nodos secundarios
+    - Red Aloha, 4 nodos secundarios
+      - Aloha Ranurado
+      - CSMA
+      - CSMA/CD
+      - CSMA/CA
+    - Protocolos, 1 nodo secundario
+      - Reglas de comunicación
+    - Estándares, 2 nodos secundarios
+      - Protocolos normalizados
+      - Instituciones (IEEE, ISO, EIA/TIA, ETSI, ANSI)
+  - Clasificación de Redes, 6 nodos secundarios
+    - Dirección de Datos, 3 nodos secundarios
+      - Símplex
+      - Half-duplex
+      - Full-duplex
+    - Destinatarios, 3 nodos secundarios
+      - Unidifusión (Unicast)
+      - Multidifusión (Multicast)
+      - Difusión (Broadcast)
+    - Medio Físico, 3 nodos secundarios
+      - Cableadas
+      - Inalámbricas
+      - Híbridas
+    - Relación de Equipos, 2 nodos secundarios
+      - Peer to Peer (P2P)
+      - Cliente-Servidor
+    - Dimensión y Alcance, 4 nodos secundarios
+      - PAN (Bluetooth, ZigBee, NFC)
+      - LAN (HAN, VLAN, WLAN)
+      - MAN
+      - WAN
+    - Privacidad, 3 nodos secundarios
+      - Pública (Internet)
+      - Privada
+      - VPN (Acceso remoto, Interna, Punto a punto)
+  - Topologías de Red, 8 nodos secundarios
+    - Bus
+    - Estrella (Común en LAN)
+    - Anillo
+    - Árbol
+    - Malla
+    - Totalmente conectada
+    - Línea
+    - Mixta
+  - Modelos de Referencia, 2 nodos secundarios
+    - Modelo OSI (7 capas), 7 nodos secundarios
+      - Aplicación
+      - Presentación
+      - Sesión
+      - Transporte
+      - Red
+      - Enlace
+      - Física
+    - Modelo TCP/IP (4 capas), 4 nodos secundarios
+      - Aplicación, 5 nodos secundarios
+        - DNS
+        - DHCP
+        - HTTP/HTTPS
+        - FTP/TFTP
+        - SMTP/POP/IMAP
+      - Transporte, 4 nodos secundarios
+        - TCP (Conexión)
+        - UDP (Sin conexión)
+        - SCTP
+        - TLS/SSL (Seguridad)
+      - Internet, 5 nodos secundarios
+        - IPv4/IPv6
+        - IPSec
+        - ARP/RARP
+        - ICMP
+        - IGMP
+      - Acceso a la Red, 3 nodos secundarios
+        - Ethernet
+        - Wifi
+        - PPP/PPPoE
+  - Documentación de Red, 3 nodos secundarios
+    - Mapa Lógico (Esquema, IPs, subredes)
+    - Mapa Físico (Espacio real, edificios)
+    - Sockets (IP + Puerto)

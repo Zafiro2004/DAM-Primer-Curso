@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/1178f257-db58-4c4f-aefa-3e813961d52c/console.sql" value="1178f257-db58-4c4f-aefa-3e813961d52c" />
+    <file url="file://$PROJECT_DIR$/Exercises CREATE-SYNONYM-DATE (Table staff and department).sql" value="1178f257-db58-4c4f-aefa-3e813961d52c" />
+    <file url="file://$PROJECT_DIR$/Exercises SELECT-1 (Customer's tables).sql" value="1178f257-db58-4c4f-aefa-3e813961d52c" />
+  </component>
+</project>

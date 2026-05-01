@@ -1,0 +1,13 @@
+-- 8. - Explain the causes and effects of the following command:
+-- UPDATE Staff a SET
+--  Department_Code = (SELECT Department_Code
+--  FROM Department
+--  WHERE City like 'Palma%')
+--  Salary = (SELECT 1.1 * AVG (salary)
+--  FROM Staff b
+--  WHERE a. Department_Code = b. Department_Code)
+--  WHERE Department_Code IN (SELECT Department_Code
+--  FROM Department
+--  WHERE City like 'Ibiza%');
+ Modify the staff table for each department of the City of Palma,
+ the salaries of employees in the departments of the City of Ibiza are increased by 10%.

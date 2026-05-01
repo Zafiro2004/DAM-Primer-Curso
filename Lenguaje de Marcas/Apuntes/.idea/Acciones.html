@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .container{
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    }
+    .grande{
+      width: 500px;
+      height: 500px;
+      background: pink;
+    }
+  </style>
+
+</head>
+<body>
+<button onclick="accion();">cambio</button>
+<br>
+<div id="box" class="container grande"></div>
+
+<script>
+  function accion() {
+    let box = document.getElementById("box");
+
+    if (box.className == "container"){
+      box.className ="grande";
+    }else{
+      box.className="container";
+    }
+  }
+</script>
+
+</body>
+</html>

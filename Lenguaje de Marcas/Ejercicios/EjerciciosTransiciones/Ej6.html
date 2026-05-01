@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón con Transición</title>
+    <style>
+        .boton {
+            background-color: #4CAF50;
+            color: white; 
+            padding: 15px 32px; 
+            border: 2px solid transparent; 
+            border-radius: 4px; 
+            cursor: pointer;
+            transition: background-color 0.5s, color 0.5s, padding 0.5s, border 0.5s; 
+        }
+
+        .boton:hover {
+            background-color: red; 
+            color: yellow; 
+            padding: 20px 40px; 
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="boton">Hola</button>
+
+</body>
+</html>

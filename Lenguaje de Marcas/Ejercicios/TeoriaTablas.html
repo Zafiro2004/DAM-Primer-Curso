@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tablas en HTML</title>
+</head>
+
+<body>
+    <h1>Tablas en HTML</h1>
+
+    <p>
+        Las tablas se utilizan para organizar información en filas y columnas.
+        La estructura básica incluye las etiquetas:
+    </p>
+
+    <ul>
+        <li><code>&lt;table&gt;</code> define la tabla.</li>
+        <li><code>&lt;tr&gt;</code> define una fila (<em>table row</em>).</li>
+        <li><code>&lt;th&gt;</code> define una celda de encabezado (<em>table header</em>).</li>
+        <li><code>&lt;td&gt;</code> define una celda de datos (<em>table data</em>).</li>
+    </ul>
+
+    <hr>
+
+    <h2>Ejemplo básico de tabla</h2>
+
+    <p>Una tabla sencilla con tres filas y tres columnas:</p>
+
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>Fernando Alonso</td>
+            <td>44</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Lewis Hamilton</td>
+            <td>40</td>
+            <td>Inglaterra</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>31</td>
+            <td>España</td>
+        </tr>
+    </table>
+
+    <p>
+        Observa que las etiquetas <code>&lt;th&gt;</code> aparecen en la primera fila
+        y muestran el texto en <strong>negrita y centrado</strong> por defecto.
+    </p>
+
+    <hr>
+
+    <h2>Partes de una tabla</h2>
+
+    <p>
+        Una tabla puede dividirse en tres partes para organizar mejor la información:
+    </p>
+
+    <ul>
+        <li><code>&lt;thead&gt;</code>: cabecera</li>
+        <li><code>&lt;tbody&gt;</code>: cuerpo</li>
+        <li><code>&lt;tfoot&gt;</code>: pie</li>
+    </ul>
+
+    <table border="1">
+        <caption>Ejemplo con cabecera y pie</caption>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manzanas</td>
+                <td>2 €</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Peras</td>
+                <td>1,5 €</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><strong>Total</strong></td>
+                <td>18</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>
+        <strong>Nota:</strong> el atributo <code>colspan="2"</code> hace que esa celda ocupe
+        dos columnas, útil para pies o títulos.
+    </p>
+
+    <table border="1">
+    <tr>
+        <th>Hora</th>
+        <th>Actividad</th>
+    </tr>
+
+    <tr>
+        <td>10:00 - 10:30</td>
+        <td rowspan="2">Recreo</td>
+    </tr>
+
+    <tr>
+        <td>10:30 - 11:00</td>
+    </tr>
+</table>
+ <p>
+        <strong>Nota:</strong> el atributo <code>rowspan="2"</code> hace que esa celda ocupe
+        dos filas
+    </p>
+
+    <hr>
+
+    <h2>Tabla dentro de un párrafo explicativo</h2>
+
+    <p>
+        También se pueden añadir estilos más adelante con CSS, pero por ahora el atributo
+        <code>border="1"</code> nos sirve para ver claramente las líneas.
+    </p>
+
+    <p>
+        Las tablas no deben usarse para maquetar la página (poner cosas en columnas),
+        sino para <strong>mostrar datos estructurados</strong>.
+    </p>
+
+    <hr>
+
+    <footer>
+        <p><small>Ejemplo educativo: estructura básica de tablas en HTML.</small></p>
+    </footer>
+
+</body>
+
+</html>

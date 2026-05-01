@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Act 4.4.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Ejercicios Repaso/Level6-Challenges.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Examen.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Triggers/Act 1.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Triggers/Act2-Portatil.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Triggers/Act2.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Triggers/Repaso.sql" dialect="MySQL" />
+  </component>
+</project>

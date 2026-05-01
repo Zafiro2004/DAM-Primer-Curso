@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 Flex</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            min-height: 100vh;
+            box-sizing: border-box;
+            gap: 10px;
+        }
+
+        .izquierda {
+            flex: 2;
+            padding: 24px;
+            background-color: #f0e68c;
+            border: 1px solid #ccc;
+        }
+
+        .derecha {
+            flex: 1;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #e0ffff;
+            border: 1px solid #ccc;
+        }
+
+        .fila {
+            flex: 1;
+            background-color: #ffb6c1;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="izquierda">Columna izquierda</div>
+    <div class="derecha">
+        <div class="fila">Derecha parte alta</div>
+        <div class="fila">Derecha parte baja</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio: div vs span</title>
+    <style>
+        /* Aplica borde a todos sin cambiar display */
+        div, span {
+            border: 2px solid #2b6ea3;
+            padding: 6px;
+            margin: 6px;
+            /* NO cambiar display: div es block, span es inline */
+        }
+
+        /* para que se vea claramente la diferencia añadimos fondo suave */
+        div { background: #e6f0fb; }
+        span { background: #f7fbff; }
+    </style>
+</head>
+<body>
+    <!-- Tres div: elementos block se apilan en columnas -->
+    <div>DIV 1: elemento block</div>
+    <div>DIV 2: elemento block</div>
+    <div>DIV 3: elemento block</div>
+
+    <hr>
+
+    <!-- Tres span: elementos inline se sitúan en línea -->
+    <p>
+        <span>SPAN 1</span>
+        <span>SPAN 2</span>
+        <span>SPAN 3</span>
+    </p>
+</body>
+<style>
+    span {
+        display: block;
+    }
+</style>
+</html>

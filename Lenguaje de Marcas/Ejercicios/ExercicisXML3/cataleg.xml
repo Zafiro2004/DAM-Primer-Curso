@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg SYSTEM "cataleg.dtd">
+<cataleg>
+    <cotxe id="c1" combustible="gasolina" moneda="EUR">
+        <marca>Seat</marca>
+        <model>Ibiza</model>
+        <any>2020</any>
+        <preu>14500</preu>
+        <extres>
+            <extra>Bluetooth</extra>
+            <extra>Càmera posterior</extra>
+        </extres>
+    </cotxe>
+
+
+    <cotxe id="c2" combustible="electric" estat="reservat" moneda="EUR">
+        <marca>Tesla</marca>
+        <model>Model 3</model>
+        <any>2023</any>
+        <preu>38900</preu>
+        <extres>
+            <extra>Autopilot</extra>
+        </extres>
+    </cotxe>
+
+
+    <cotxe id="c3" combustible="diesel" moneda="EUR">
+        <marca>Volkswagen</marca>
+        <model>Golf</model>
+        <any>2019</any>
+        <preu>17900</preu>
+    </cotxe>
+    <cotxe id="c4" combustible="hibrid" moneda="EUR">
+        <marca>Toyota</marca>
+        <model>Corolla</model>
+        <any>2022</any>
+        <preu>23000</preu>
+    </cotxe>
+    <cotxe combustible="gasolina" moneda="EUR">
+        <marca>Ford</marca>
+        <model>Focus</model>
+        <any>2021</any>
+        <preu>19000</preu>
+    </cotxe>
+
+
+</cataleg>

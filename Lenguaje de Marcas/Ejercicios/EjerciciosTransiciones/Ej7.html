@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Transición</title>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+
+        .menu-toggle {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+
+        .menu {
+            background-color: #444;
+            color: white;
+            height: 0px;
+            overflow: hidden;
+            transition: height 0.5s ease; 
+        }
+
+        .menu-toggle:hover + .menu,
+        .menu:hover {
+            height: 120px;
+        }
+
+        .menu ul { list-style: none; margin: 0; padding: 10px 0; }
+        .menu li { padding: 10px 20px; cursor: pointer; }
+        .menu li:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+    <button class="menu-toggle">Menú</button>
+    <div class="menu">
+        <ul>
+            <li>Opción 1</li>
+            <li>Opción 2</li>
+            <li>Opción 3</li>
+        </ul>
+    </div>
+</body>
+</html>

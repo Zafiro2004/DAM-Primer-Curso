@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    const inputNom = document.getElementById('nom-usuari');
+
+    inputNom.addEventListener('invalid', (event) => {
+        event.target.style.border = "2px solid red";
+
+        event.target.setCustomValidity("Ei! No oblidis posar el teu nom abans de continuar.");
+    });
+
+    inputNom.addEventListener('input', (e) => e.target.style.border = "");
+</script>
+</body>
+</html>

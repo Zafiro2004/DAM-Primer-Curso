@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Ejercicios SQL de Librería con DDL y DML/EjerciciosSQLdeLibreríaconDDLyDML .sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/PrimeraTanda/Ejercicios.sql" dialect="Oracle" />
+  </component>
+</project>

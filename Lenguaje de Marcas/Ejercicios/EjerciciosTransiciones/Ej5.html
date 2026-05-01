@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transición de Opacidad</title>
+    <style>
+        .bloque {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bloque:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloque">
+        Este texto se vuelve visible al pasar el ratón.
+    </div>
+</body>
+</html>

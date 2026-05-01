@@ -1,0 +1,129 @@
+Level 1 - Basics
+(SELECT, WHERE, ORDER BY, LIMIT)
+
+Muestra todos los datos de la tabla departments.
+
+Lista el título (job_title) y el salario mínimo de todos los puestos de trabajo en la tabla jobs.
+
+Muestra las ubicaciones (locations) cuyo código postal (postal_code) no sea nulo.
+
+Muestra los países (countries) que pertenecen a la región (region_id) número 2.
+
+Lista los departamentos ordenados por su nombre (department_name) de la Z a la A.
+
+Muestra los 5 trabajos (jobs) con el salario máximo (max_salary) más alto.
+
+Muestra los países cuyo nombre empieza por la letra 'C'.
+
+Lista los historiales de trabajo (job_history) que comenzaron (start_date) después del año 1995.
+
+Muestra las regiones (regions) ordenadas por su nombre alfabéticamente.
+
+Muestra todas las columnas de las ubicaciones que se encuentran en la ciudad de 'Tokyo'.
+
+Level 2 - Functions and filters
+(AND, OR, IN, BETWEEN, LIKE, functions)
+
+Muestra los departamentos que están ubicados en la location_id 1700 o 1800.
+
+Lista los trabajos (jobs) cuyo salario mínimo no está entre 4000 y 8000.
+
+Muestra el número total de departamentos en la empresa.
+
+Muestra el salario máximo más alto, el salario mínimo más bajo y la suma de todos los salarios mínimos de la tabla jobs.
+
+Muestra las ubicaciones (locations) cuyo nombre de ciudad tiene exactamente 6 letras.
+
+Muestra los trabajos (jobs) cuyo identificador (job_id) termina con la palabra 'REP' o 'MAN'.
+
+Muestra la diferencia matemática entre el max_salary y el min_salary para cada puesto, y llama a esta columna rango_salarial.
+
+Muestra los años en los que los empleados finalizaron un trabajo (extrayendo solo el año de end_date en job_history).
+
+Lista los países cuyo nombre contiene la letra 'i' al menos dos veces.
+
+Muestra las regiones, ordenadas por la longitud de su nombre (de la más corta a la más larga).
+
+Level 3 - GROUP BY and HAVING
+Muestra cuántos departamentos hay en cada ubicación (location_id).
+
+Muestra las ubicaciones (location_id) que albergan más de 2 departamentos.
+
+Muestra cuántos países diferentes pertenecen a cada region_id.
+
+Muestra las regiones (region_id) que tienen menos de 5 países.
+
+Muestra cuántas ciudades hay registradas por cada país (country_id) en la tabla locations.
+
+Muestra los países (country_id) que tienen exactamente una sola ubicación registrada en la base de datos.
+
+En la tabla job_history, muestra la cantidad de registros históricos agrupados por job_id.
+
+En la tabla job_history, muestra los job_id que han sido ocupados históricamente por más de un empleado distinto.
+
+Agrupa los trabajos (jobs) por su min_salary y muestra cuántos puestos tienen exactamente el mismo salario mínimo inicial.
+
+Usando job_history, muestra la cantidad de empleados que rotaron de puesto en cada departamento (department_id).
+
+Level 4 - Multiple Tables (JOINs)
+Muestra el nombre de cada país junto con el nombre de su región correspondiente (regions).
+
+Lista todas las ubicaciones mostrando la dirección (street_address), la ciudad y el nombre del país al que pertenecen (countries).
+
+Muestra el nombre de cada departamento junto con la ciudad donde está ubicado (locations).
+
+Muestra los registros históricos (job_history), mostrando el ID del empleado y el título del trabajo (job_title) que ocupó.
+
+Lista todos los países y el nombre de su región, incluyendo aquellos países que pudieran no tener ciudades registradas.
+
+Para cada ubicación (locations), muestra la cantidad de departamentos que alberga (usa un JOIN y un GROUP BY).
+
+Crea un listado que muestre el nombre del departamento, la ciudad, el nombre del país y el nombre de la región donde se ubica.
+
+Lista todos los departamentos, incluyendo aquellos que no tienen un manager asignado en la tabla departments (muestra el ID del manager nulo si es el caso).
+
+Muestra para cada país (countries) la ciudad (locations) en la que tiene presencia. Usa un LEFT JOIN para incluir a los países sin ciudades registradas.
+
+Relaciona la tabla departments con employees para mostrar el nombre del departamento y el nombre (first_name) del empleado que actualmente es el director (manager) de ese departamento.
+
+Level 5 - Subqueries & Advanced Relationships
+Muestra los países que están en la misma región que 'Argentina' (usando subconsultas).
+
+Lista las ciudades (locations) que no tienen ningún departamento asignado en la tabla departments.
+
+Muestra los títulos de trabajo (jobs) cuyo salario mínimo es mayor que el salario de cualquier empleado en el departamento 50.
+
+Muestra la ciudad (o ciudades) que tiene la mayor cantidad de departamentos.
+
+Encuentra los departamentos que se encuentran en el país 'United States of America' usando subconsultas, sin usar JOINs.
+
+Muestra los títulos de trabajos (jobs) que nunca han sido registrados en el historial de empleos (job_history).
+
+Muestra el nombre de los departamentos donde ha habido al menos un cambio de puesto en el pasado (que existan en job_history).
+
+Muestra los ID de los empleados que han trabajado en el mismo departamento más de una vez en su historial (job_history).
+
+Encuentra el país que tiene la mayor cantidad de ubicaciones (locations) registradas.
+
+Muestra la ubicación (ciudad y país) del departamento con más empleados en toda la empresa.
+
+Level 6 - Challenges
+Muestra para cada país (nombre del país), la cantidad total de departamentos que hay repartidos en todas sus ubicaciones.
+
+Lista los empleados (nombre y apellido) cuyo salario actual es menor que el min_salary de cualquiera de los puestos que hayan tenido en el pasado según job_history.
+
+Muestra el nombre de la región que alberga la mayor cantidad de departamentos a nivel mundial.
+
+Para cada trabajo en jobs, muestra la diferencia entre el salario máximo definido para el puesto y el salario máximo real que cobra alguien actualmente en ese puesto.
+
+Encuentra los países donde hay al menos una ubicación registrada (locations), pero ningún empleado trabajando allí en este momento.
+
+Genera un reporte que muestre: region_name, country_name, city y el número total de departamentos en esa ciudad. Si la ciudad no tiene departamentos, que muestre 0.
+
+Muestra a los empleados (ID y nombre) que actualmente están trabajando en un puesto diferente al que tenían en su primer registro de job_history.
+
+Muestra los departamentos que no han tenido ninguna rotación de personal (ningún empleado aparece con ese departamento en job_history).
+
+Lista el título del puesto (job_title), el nombre del departamento y los días totales (diferencia entre end_date y start_date) del empleado que ocupó un cargo histórico por más tiempo en job_history.
+
+Encuentra el/los empleado/s que actualmente ocupan un puesto con un salario fuera del rango establecido (menor al min_salary o mayor al max_salary que le corresponde a su job_id en la tabla jobs).

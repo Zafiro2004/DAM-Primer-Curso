@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<header><title>Ejercicio 3 Flex</title></header>
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    li {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+</style>
+<body>
+<ul>
+<li>Solo tengo una línea</li>
+<li>Este texto ocupa algo más que el de al lado<br>
+Son dos lineas</li>
+<li>Este es más largo que los otros dos y ocupa más líneas
+<p>Pero todos estos bloques tienen la misma altura y anchura, crecen
+o de contraen para repartirse el ancho disponible</p></li>
+</ul>
+</body>

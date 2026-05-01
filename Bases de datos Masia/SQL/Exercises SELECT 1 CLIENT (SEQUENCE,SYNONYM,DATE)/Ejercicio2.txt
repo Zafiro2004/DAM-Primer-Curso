@@ -1,0 +1,12 @@
+Data Integrity: Ensures that the information in the database is logical and consistent
+(for example, it does not allow negative salaries or non-existent positions).
+
+Prevention of Human Error: Acts as an automatic filter that prevents a user
+or application from accidentally entering incorrect data.
+
+
+Referential Consistency: Prevents “orphan data”
+(such as an employee assigned to a department that does not exist).
+
+Code Simplification: There is no need to write complex validations in the programming language
+(Java, Python, etc.), as the database itself rejects anything that does not comply with the rules.

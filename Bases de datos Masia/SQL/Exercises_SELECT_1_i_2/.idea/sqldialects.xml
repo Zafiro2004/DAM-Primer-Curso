@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../../../Bases de Datos Antoni/Activity 3.1.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/../../../Bases de Datos Antoni/Activity 3.35.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../Bases de Datos Antoni/Activity 4.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../Bases de Datos Antoni/Ejercicios Repaso/Level4-Subqueries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../Bases de Datos Antoni/Ejercicios Repaso/Level5-Joins.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../Bases de Datos Antoni/Ejercicios Repaso/Level6-Challenges.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../Contraseña.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/Exercise_SELECT_1.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/Exercise_SELECT_2.sql" dialect="OracleSqlPlus" />
+  </component>
+</project>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 Flex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: stretch;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            height: 40px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .cuerpo {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .pie {
+            height: 30px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="card">
+            <div class="title">Tarjeta Izquierda</div>
+            <div class="cuerpo">
+                <p>Línea más larga de contenido de texto </p>
+                <p>Contenido del cuerpo </p>
+                <p>Contenido del cuerpo &nbsp;</p>
+            </div>
+            <div class="pie">Pie </div>
+        </div>
+        <div class="card">
+            <div class="title">Tarjeta centro</div>
+            <div class="cuerpo">
+                <p>Contenido del cuerpo </p>
+            </div>
+            <div class="pie">Pie </div>
+        </div>
+        <div class="card">
+            <div class="title">Tarjeta derecha</div>
+            <div class="cuerpo">
+                <p>Contenido del cuerpo </p>
+            </div>
+            <div class="pie">Pie </div>
+        </div>
+    </div>
+</body>
+
+</html>

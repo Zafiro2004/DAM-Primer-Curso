@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title> Tabla de Horario </title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1> Tabla de Horario Semanal </h1>
+    <table>
+        <tr>
+            <th> Hora </th>
+            <th> Lunes </th>
+            <th> Martes </th>
+            <th> Miércoles </th>
+            <th> Jueves </th>
+            <th> Viernes </th>
+        </tr>
+        <tr>
+            <th> 15:30-16:25 </th>
+            <td rowspan="2" bgcolor ="orange"> Programación</td>
+            <td rowspan ="2" bgcolor ="yellow"> Bases de datos</td>
+            <td bgcolor = "lightgreen"> Entornos de Desarrollo </td>
+            <td rowspan="3" bgcolor = "orange"> Programación </td>
+            <td rowspan="2" bgcolor = "yellow"> Bases de datos </td>
+        </tr>
+        <tr>
+            <th> 16:25-17:20 </th>
+            <td rowspan="2" bgcolor = "yellow"> Bases de datos </td>
+        </tr>
+        <tr>
+            <th> 17:20-18:15 </th>
+            <td bgcolor = "purple"> IPO </td>
+            <td bgcolor ="brown"> Digitalización </td>-
+            <td bgcolor ="purple"> IPO </td>
+            
+        </tr>
+        <tr>
+            <th>18:15:18:45</th>
+            <td colspan="5" bgcolor ="lightblue"> Patio </td>
+        </tr>
+        <tr>
+            <th> 18:45-19:40 </th>
+            <td bgcolor="red" rowspan="3"> Lenguaje de Marcas</td>
+            <td bgcolor="orange"> Programación </td>
+            <td bgcolor ="orange"> Programación </td>
+            <td bgcolor ="yellow"> Bases de datos </td>
+            <td bgcolor = "purple"> IPO </td>
+        </tr>
+        <tr>
+            <th> 19:40-20:35 </th>
+            <td rowspan="2" bgcolor="pink"> Sistemas Informáticos </td>
+            <td rowspan="2" bgcolor="pink"> Sistemas Informáticos </td>
+            <td rowspan="2" bgcolor ="lightgreen"> Entornos de Desarrollo </td>
+            <td rowspan="2" bgcolor="red"> Lenguaje de Marcas </td>
+        </tr>
+        <tr>
+            <th> 20:35-21:30 </th>
+            
+        </tr>
+    </table>
+</html>
