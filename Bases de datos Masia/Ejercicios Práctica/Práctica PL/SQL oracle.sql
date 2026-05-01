@@ -348,7 +348,15 @@ El importe_final de cada factura deberá recalcularse también.
 CREATE OR REPLACE PROCEDURE aplicar_descuento_empleado(p_cod_empleado IN NUMBER) IS
     -- Tu código aquí
 BEGIN
-    NULL;
+    UPDATE FACTURA F
+    SET descuento_pct = descuento_pct + 2,
+        importe_final = base_imponible - (base_imponible * ((descuento_pct + 2) / 100))
+    WHERE cod_alquiler in(
+        SELECT cod_alquiler
+        FROM ALQUILER A
+        WHERE cod_empleado=p_cod_empleado
+        AND F.cod_alquiler=A.cod_alquiler
+        );
 END;
 /
 
