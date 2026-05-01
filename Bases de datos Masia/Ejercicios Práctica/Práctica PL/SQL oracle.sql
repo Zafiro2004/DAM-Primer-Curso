@@ -217,12 +217,15 @@ Ejemplo de llamada:
 
 CREATE OR REPLACE FUNCTION contar_empleados_cargo(p_cargo IN VARCHAR2)
     RETURN NUMBER IS
-    -- Tu código aquí
+    n integer;
 BEGIN
-    NULL;
+    select count(*) into n
+    from EMPLEADO
+    where cargo = p_cargo;
+    return n;
 END;
 /
-
+SELECT contar_empleados_cargo('AGENTE') FROM DUAL;
 
 /*
 ══════════════════════════════════════════════════════════════
