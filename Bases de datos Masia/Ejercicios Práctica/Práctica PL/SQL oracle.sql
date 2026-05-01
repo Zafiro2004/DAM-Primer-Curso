@@ -346,7 +346,6 @@ El importe_final de cada factura deberá recalcularse también.
 */
 
 CREATE OR REPLACE PROCEDURE aplicar_descuento_empleado(p_cod_empleado IN NUMBER) IS
-    -- Tu código aquí
 BEGIN
     UPDATE FACTURA F
     SET descuento_pct = descuento_pct + 2,
@@ -372,14 +371,54 @@ Crea un PROCEDIMIENTO que recorra todos los clientes y
 actualice esa columna con el número real de alquileres que
 tiene registrados en la tabla ALQUILER.
 */
+CREATE OR REPLACE PROCEDURE actualizar_num_alquileres1 IS
+    cli CLIENTE.COD_CLIENTE%type;
+    cont int;
 
-CREATE OR REPLACE PROCEDURE actualizar_num_alquileres IS
-    -- Tu código aquí
+    cursor get_clientes is select cod_cliente from CLIENTE;
 BEGIN
-    NULL;
+    open get_clientes;
+
+    loop
+        fetch get_clientes into cli;
+        exit when get_clientes%NOTFOUND;
+
+        select count(*) into cont
+        from ALQUILER
+        where cod_cliente = cli;
+
+        update CLIENTE set NUM_ALQUILERES=cont where cod_cliente=cli;
+    end loop;
+    close get_clientes;
 END;
 /
+CREATE OR REPLACE PROCEDURE actualizar_num_alquileres2 IS
+    cont int;
+BEGIN
+    -- El bucle declara 'registro', abre el cursor, extrae la fila y cierra solo.
+    FOR registro IN (SELECT cod_cliente FROM CLIENTE) LOOP
 
+            select count(*) into cont
+            from ALQUILER
+            where cod_cliente = registro.cod_cliente;
+
+            update CLIENTE
+            set NUM_ALQUILERES = cont
+            where cod_cliente = registro.cod_cliente;
+
+        END LOOP;
+END;
+/
+CREATE OR REPLACE PROCEDURE actualizar_num_alquileres3 IS
+BEGIN
+    UPDATE CLIENTE C
+    SET NUM_ALQUILERES = (
+        SELECT COUNT(*)
+        FROM ALQUILER A
+        WHERE A.cod_cliente = C.cod_cliente
+    );
+END;
+/
 
 /*
 ══════════════════════════════════════════════════════════════
