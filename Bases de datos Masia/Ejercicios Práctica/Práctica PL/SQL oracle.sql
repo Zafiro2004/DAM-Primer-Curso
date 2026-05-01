@@ -486,3 +486,5 @@ BEGIN
     close c_ciudades;
 END;
 /
+call informe_por_ciudad(DATE '2024-01-01', DATE '2024-01-31');
+call informe_por_ciudad(DATE '2024-02-01', DATE '2024-02-28');
