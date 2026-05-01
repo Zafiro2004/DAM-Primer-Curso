@@ -1,0 +1,111 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
+  <diagram name="Página-1" id="9TqnmuiTvFLdzK7bfNSz">
+    <mxGraphModel dx="1938" dy="1251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Direccion General" treeRoot="1" id="mqvPXMPRSMByL2KeHUcb-29">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+            <mxGeometry x="900" y="590" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-28" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;" edge="1" parent="1" source="mqvPXMPRSMByL2KeHUcb-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-27" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;" edge="1" parent="1" source="mqvPXMPRSMByL2KeHUcb-29" target="mqvPXMPRSMByL2KeHUcb-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-30" value="Comercial y Atención al Cliente" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+          <mxGeometry x="800" y="690" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-33" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mqvPXMPRSMByL2KeHUcb-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="660" as="sourcePoint" />
+            <mxPoint x="1169" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-34" value="Mantenimiento" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+          <mxGeometry x="566.5" y="690" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-35" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-34" parent="1" source="mqvPXMPRSMByL2KeHUcb-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="674" y="650" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-37" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mqvPXMPRSMByL2KeHUcb-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="650" as="sourcePoint" />
+            <mxPoint x="1310" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-38" value="Operaciones y Tráfico" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+          <mxGeometry x="329" y="690" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-39" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;curved=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-38" parent="1" source="mqvPXMPRSMByL2KeHUcb-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="567" y="660" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-40" value="" style="edgeStyle=orthogonalEdgeStyle;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;targetPortConstraint=eastwest;sourcePortConstraint=northsouth;curved=0;rounded=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-42" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="379" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-41" value="" style="edgeStyle=orthogonalEdgeStyle;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;targetPortConstraint=eastwest;sourcePortConstraint=northsouth;curved=0;rounded=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-43" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="379" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-42" value="Centro de Control" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+          <mxGeometry x="269" y="790" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-43" value="Maquinistas" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+          <mxGeometry x="389" y="790" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-44" value="" style="edgeStyle=orthogonalEdgeStyle;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;targetPortConstraint=eastwest;sourcePortConstraint=northsouth;curved=0;rounded=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-46" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="617" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-45" value="" style="edgeStyle=orthogonalEdgeStyle;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;targetPortConstraint=eastwest;sourcePortConstraint=northsouth;curved=0;rounded=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-47" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="617" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-46" value="Taller Norte" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+          <mxGeometry x="507" y="790" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-47" value="Taller Sur" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+          <mxGeometry x="627" y="790" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-48" value="Administración y Finanzas" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+          <mxGeometry x="980" y="690" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-49" value="Recursos Humanos" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+          <mxGeometry x="1119" y="690" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-50" value="Departamento IT" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+          <mxGeometry x="1260" y="690" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-51" value="" style="edgeStyle=orthogonalEdgeStyle;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;targetPortConstraint=eastwest;sourcePortConstraint=northsouth;curved=0;rounded=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-53" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-52" value="" style="edgeStyle=orthogonalEdgeStyle;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startArrow=none;endArrow=none;rounded=0;targetPortConstraint=eastwest;sourcePortConstraint=northsouth;curved=0;rounded=0;" edge="1" target="mqvPXMPRSMByL2KeHUcb-54" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-53" value="División Pasajeros" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="790" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mqvPXMPRSMByL2KeHUcb-54" value="División Mercancías" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="790" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
