@@ -242,12 +242,26 @@ o un mensaje de salida (DBMS_OUTPUT).
 */
 
 CREATE OR REPLACE PROCEDURE subir_precio_categoria(p_limite IN NUMBER) IS
-    -- Tu código aquí
+    v_cuantas NUMBER;
 BEGIN
-    NULL;
+    SELECT COUNT(*)
+    INTO v_cuantas
+    FROM CATEGORIA
+    WHERE precio_dia < p_limite
+      AND precio_dia + 5 > 200;
+
+    IF v_cuantas > 0 THEN
+        DBMS_OUTPUT.PUT_LINE('No se ha actualizado: alguna categoria superaria los 200 euros/dia.');
+    ELSE
+        UPDATE CATEGORIA
+        SET precio_dia = precio_dia + 5
+        WHERE precio_dia < p_limite;
+
+        DBMS_OUTPUT.PUT_LINE('Categorias actualizadas: ' || SQL%ROWCOUNT);
+    END IF;
 END;
 /
-
+call subir_precio_categoria(100);
 
 /*
 ══════════════════════════════════════════════════════════════
@@ -260,15 +274,25 @@ recorridos por ese vehículo en todos sus alquileres.
 Ejemplo de llamada:
     SELECT km_totales_vehiculo('1234-ABC') FROM DUAL;
 */
-
 CREATE OR REPLACE FUNCTION km_totales_vehiculo(p_matricula IN VARCHAR2)
     RETURN NUMBER IS
-    -- Tu código aquí
+    km_total NUMBER := 0;
 BEGIN
-    NULL;
+    -- Ensure NULL is returned if there are no matching records
+    SELECT NVL(SUM(km_recorridos), 0)
+    INTO km_total
+    FROM ALQUILER
+    WHERE matricula = p_matricula;
+
+    RETURN km_total;
+EXCEPTION
+    WHEN OTHERS THEN
+        -- Handle any unexpected errors
+        RETURN NULL;
 END;
 /
-
+SELECT km_totales_vehiculo('1234-ABC')
+FROM DUAL;
 
 /*
 ══════════════════════════════════════════════════════════════
