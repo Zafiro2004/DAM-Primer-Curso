@@ -187,19 +187,20 @@ automáticamente estas columnas según las siguientes reglas:
   · VALOR_ESTIMADO  = precio_dia de su categoría × 365 × 0.15
   · ANTIGUEDAD_ANIOS = año actual − anyo_fab
 
+
+*/
 ALTER TABLE VEHICULO ADD (
     valor_estimado   NUMBER(10,2),
     antiguedad_anios NUMBER(3)
-);
-*/
-
+    );
 -- Tu solución aquí:
 BEGIN
     update VEHICULO v set VALOR_ESTIMADO = (select precio_dia from CATEGORIA c
-                                                              where c.cod_categoria=v.COD_CATEGORIA);
-
+                                                              where c.cod_categoria=v.COD_CATEGORIA),
+    antiguedad_anios = EXTRACT(YEAR FROM SYSDATE) - v.anyo_fab;
 END;
-/
+
+
 
 
 /*
