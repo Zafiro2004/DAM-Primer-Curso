@@ -310,9 +310,26 @@ a 'SUPERVISOR', aumentándole el salario un 30%.
 */
 
 CREATE OR REPLACE PROCEDURE ascender_agente_antiguo IS
-    -- Tu código aquí
+    fecha date;
+    n int;
 BEGIN
-    NULL;
+    select min(fecha_alta) into fecha
+    from EMPLEADO
+    where cargo='AGENTE';
+
+    select count(*) into n
+    from EMPLEADO
+    where fecha_alta=fecha and cargo='AGENTE';
+
+    if (fecha is null or n=0) then
+        DBMS_OUTPUT.PUT_LINE('No hay agentes');
+    elsif(n>1) then
+        DBMS_OUTPUT.PUT_LINE('Hay mas de un agente con la misma fecha');
+    else
+        update EMPLEADO
+        set salario=salario*1.3,cargo='SUPERVISOR'
+        where fecha_alta=fecha and cargo='AGENTE';
+    end if;
 END;
 /
 
