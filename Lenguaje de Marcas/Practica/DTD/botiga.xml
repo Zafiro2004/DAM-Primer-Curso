@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <botiga
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="botiga.xsd">>
+        xsi:noNamespaceSchemaLocation="botiga.xsd">
     <producte id="p1" categoria="electronica" moneda="EUR">
         <nom>Portàtil ASUS</nom>
         <marca>ASUS</marca>
@@ -26,5 +26,36 @@
         <etiquetes>
             <etiqueta>eco</etiqueta>
         </etiquetes>
+    </producte>
+    <!-- Fragment 1 (Correcto)-->
+    <producte id="p4" categoria="llar" moneda="EUR">
+        <nom>Aspiradora Dyson</nom>
+        <marca>Dyson</marca>
+        <preu>299.00</preu>
+        <stock>8</stock>
+    </producte>
+
+    <!-- Fragment 2 (Moneda no puede tener ese valor) -->
+    <producte id="p5" categoria="electronica" moneda="USD">
+        <nom>Auriculars Sony</nom>
+        <marca>Sony</marca>
+        <preu>89.99</preu>
+        <stock>25</stock>
+    </producte>
+
+    <!-- Fragment 3 (Preu no puede ser negativo) -->
+    <producte categoria="roba" moneda="EUR">
+        <nom>Jaqueta de cuir</nom>
+        <marca>Mango</marca>
+        <preu>-15.00</preu>
+        <stock>3</stock>
+    </producte>
+
+    <!-- Fragment 4 (Nom tiene que tener mas de tres carácteres y stock está girado con preu) -->
+    <producte id="p6" categoria="alimentacio" moneda="EUR">
+        <nom>Pa</nom>
+        <marca>Bimbo</marca>
+        <stock>50</stock>
+        <preu>1.20</preu>
     </producte>
 </botiga>
