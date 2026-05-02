@@ -349,7 +349,7 @@ CREATE OR REPLACE PROCEDURE aplicar_descuento_empleado(p_cod_empleado IN NUMBER)
 BEGIN
     UPDATE FACTURA F
     SET descuento_pct = descuento_pct + 2,
-        importe_final = base_imponible - (base_imponible * ((descuento_pct + 2) / 100))
+        importe_final = base_imponible - (base_imponible * (1-(descuento_pct + 2) / 100))
     WHERE cod_alquiler in(
         SELECT cod_alquiler
         FROM ALQUILER A
@@ -480,8 +480,8 @@ BEGIN
 
         DBMS_OUTPUT.PUT_LINE('Ciudad: ' || v_nombre_ciudad);
         DBMS_OUTPUT.PUT_LINE('  Vehículos alquilados : ' || v_total_vehiculos);
-        DBMS_OUTPUT.PUT_LINE('Importe total facturado : ' || v_total_dinero);
-        DBMS_OUTPUT.PUT_LINE('Empleado con mas alquileres : ' || v_mejor_emp);
+        DBMS_OUTPUT.PUT_LINE('  Importe total facturado : ' || v_total_dinero);
+        DBMS_OUTPUT.PUT_LINE('  Empleado con mas alquileres : ' || v_mejor_emp);
     end loop;
     close c_ciudades;
 END;

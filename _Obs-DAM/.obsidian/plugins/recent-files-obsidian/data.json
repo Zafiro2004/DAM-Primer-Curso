@@ -1,6 +1,50 @@
 {
   "recentFiles": [
     {
+      "basename": "GIT",
+      "path": "DAM-1/Entornos de desarrollo/GIT.md"
+    },
+    {
+      "basename": "Ejercicio UML",
+      "path": "DAM-1/Entornos de desarrollo/Ejercicio UML.md"
+    },
+    {
+      "basename": "Ejercicio 6",
+      "path": "DAM-1/Entornos de desarrollo/Ejercicio 6.md"
+    },
+    {
+      "basename": "Unidad 6 - Diseño orientado a objetos - Diagramas de comportamiento",
+      "path": "DAM-1/Entornos de desarrollo/Unidad 6 - Diseño orientado a objetos - Diagramas de comportamiento.md"
+    },
+    {
+      "basename": "Unidad 2 - Instalación y uso de entornos de desarrollo",
+      "path": "DAM-1/Entornos de desarrollo/Unidad 2 - Instalación y uso de entornos de desarrollo.md"
+    },
+    {
+      "basename": "Unidad 1 - Desarrollo de Software",
+      "path": "DAM-1/Entornos de desarrollo/Unidad 1 - Desarrollo de Software.md"
+    },
+    {
+      "basename": "Máquina de Van Neuman",
+      "path": "DAM-1/Entornos de desarrollo/Máquina de Van Neuman.md"
+    },
+    {
+      "basename": "HelloWorld",
+      "path": "DAM-1/Entornos de desarrollo/HelloWorld.md"
+    },
+    {
+      "basename": "Trabajo UR4",
+      "path": "DAM-1/Sistemas informáticos/Trabajo UR4/Trabajo UR4.md"
+    },
+    {
+      "basename": "Entornos de desarrollo",
+      "path": "DAM-1/Entornos de desarrollo/Entornos de desarrollo.md"
+    },
+    {
+      "basename": "DAM-1",
+      "path": "DAM-1/DAM-1.md"
+    },
+    {
       "basename": "5.1.1 - Protocolos y Estándares",
       "path": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.1 - Protocolos y Estándares.md"
     },
@@ -155,50 +199,6 @@
     {
       "basename": "U11-Competencia-Digital",
       "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11-Competencia-Digital.md"
-    },
-    {
-      "basename": "U11-Tipos-Competencias-Digitales",
-      "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11-Tipos-Competencias-Digitales.md"
-    },
-    {
-      "basename": "Itinerario Personal para la Empleabilidad",
-      "path": "DAM-1/Itinerario Personal para la Empleabilidad/Itinerario Personal para la Empleabilidad.md"
-    },
-    {
-      "basename": "Examen Bases Antoni",
-      "path": "DAM-1/!Examenes/Examen Bases Antoni.md"
-    },
-    {
-      "basename": "CSV en Java",
-      "path": "DAM-1/Programación/Teoría/Unidad 5 - Lectura y escritura de archivos en Java/CSV en Java.md"
-    },
-    {
-      "basename": "Gestión de archivos y directorios en Java",
-      "path": "DAM-1/Programación/Teoría/Unidad 5 - Lectura y escritura de archivos en Java/Gestión de archivos y directorios en Java.md"
-    },
-    {
-      "basename": "OLD y NEW en Triggers",
-      "path": "DAM-1/Bases de datos/Unit 5 - Triggers/OLD y NEW en Triggers.md"
-    },
-    {
-      "basename": "Triggers BEFORE DELETE y AFTER DELETE",
-      "path": "DAM-1/Bases de datos/Unit 5 - Triggers/Triggers BEFORE DELETE y AFTER DELETE.md"
-    },
-    {
-      "basename": "Triggers BEFORE UPDATE y AFTER UPDATE",
-      "path": "DAM-1/Bases de datos/Unit 5 - Triggers/Triggers BEFORE UPDATE y AFTER UPDATE.md"
-    },
-    {
-      "basename": "Bases de datos",
-      "path": "DAM-1/Bases de datos/Bases de datos.md"
-    },
-    {
-      "basename": "Validación XML DTD y XSD",
-      "path": "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md"
-    },
-    {
-      "basename": "XML",
-      "path": "DAM-1/LenguajeMarcas/XML.md"
     }
   ],
   "omittedPaths": [],

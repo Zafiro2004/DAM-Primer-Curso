@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.1 - Protocolos y Estándares.md",
+                "file": "DAM-1/Entornos de desarrollo/GIT.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "5.1.1 - Protocolos y Estándares"
+              "title": "GIT"
             }
           }
         ],
@@ -85,8 +85,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -143,8 +143,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -177,14 +177,26 @@
       "canvas:Crear nuevo lienzo": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "export-graph-view:Export graph view": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-full-calendar:Open Full Calendar": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "export-graph-view:Export graph view": false
     }
   },
   "active": "49621c31c9542851",
   "lastOpenFiles": [
+    "DAM-1/Entornos de desarrollo/Ejercicio UML.md",
+    "DAM-1/Entornos de desarrollo/Ejercicio 6.md",
+    "DAM-1/Entornos de desarrollo/Unidad 6 - Diseño orientado a objetos - Diagramas de comportamiento.md",
+    "DAM-1/Entornos de desarrollo/Unidad 2 - Instalación y uso de entornos de desarrollo.md",
+    "DAM-1/Entornos de desarrollo/Unidad 1 - Desarrollo de Software.md",
+    "DAM-1/Entornos de desarrollo/Máquina de Van Neuman.md",
+    "DAM-1/Entornos de desarrollo/HelloWorld.md",
+    "DAM-1/Sistemas informáticos/Trabajo UR4/Trabajo UR4.md",
+    "DAM-1/Entornos de desarrollo/GIT.md",
+    "DAM-1/Entornos de desarrollo/Entornos de desarrollo.md",
+    "DAM-1/DAM-1.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.1 - Protocolos y Estándares.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Tema 5 - Sistemas Informáticos en Red.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1 - Redes Informáticas.md",
     "To-Do.md",
@@ -200,18 +212,6 @@
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red.zip",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.1 - Redes Cableadas.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.6 - Monitorización y Simulación.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.6 - Servidores DHCP y DNS.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.5 - Subnetting.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.4 - Puerta de Enlace.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.3 - Clases de Redes IPv4.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.2 - Máscara de Subred.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.1 - Direcciones IPv4 e IPv6.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3 - Direccionamiento IP.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.4 - Protocolos Utilizados en las Redes.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.3 - Comparación OSI y TCP-IP.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.1 - Modelo OSI.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2 - Modelos de Referencia.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.3 - Mapas Físicos y Lógicos.md",
     "DAM-1/Programación/Python/_PythonNotesForProfessionals.pdf",
     "DAM-1/Bases de datos/Unit 5 - Triggers",
     "DAM-1/LenguajeMarcas/XML",
