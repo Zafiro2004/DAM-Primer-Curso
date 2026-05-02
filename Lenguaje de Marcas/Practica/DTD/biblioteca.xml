@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<biblioteca>
+    <llibre id="l1" idioma="catala" disponible="si">
+        <titol>Tirant lo Blanc</titol>
+        <autor>Joanot Martorell</autor>
+        <any>1490</any>
+        <pagines>1112</pagines>
+        <generes>
+            <genere>Novel·la</genere>
+            <genere>Cavalleria</genere>
+        </generes>
+    </llibre>
+    <llibre id="l2" idioma="castella" disponible="no" estat="prestat">
+        <titol>Don Quijote de la Mancha</titol>
+        <autor>Miguel de Cervantes</autor>
+        <any>1605</any>
+        <pagines>863</pagines>
+    </llibre>
+    <llibre id="l3" idioma="angles">
+        <titol>1984</titol>
+        <autor>George Orwell</autor>
+        <any>1949</any>
+        <pagines>328</pagines>
+        <generes>
+            <genere>Distopia</genere>
+        </generes>
+    </llibre>
+</biblioteca>
