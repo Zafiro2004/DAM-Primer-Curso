@@ -26,4 +26,25 @@
             <genere>Distopia</genere>
         </generes>
     </llibre>
+    <!-- Fragment 1 (Perfecto) -->
+    <llibre id="l4" idioma="frances" disponible="no">
+        <titol>Le Petit Prince</titol>
+        <autor>Antoine de Saint-Exupéry</autor>
+        <any>1943</any>
+        <pagines>96</pagines>
+    </llibre>
+    <!-- Fragment 2 (Opción de idioma equivocada) -->
+    <llibre id="l5" idioma="alemany">
+        <titol>Der Prozess</titol>
+        <autor>Franz Kafka</autor>
+        <any>1925</any>
+        <pagines>255</pagines>
+    </llibre>
+    <!-- Fragment 3 (Orden de elementos equivocado) -->
+    <llibre id="l6" idioma="catala">
+        <autor>Salvador Espriu</autor>
+        <titol>La pell de brau</titol>
+        <any>1960</any>
+        <pagines>64</pagines>
+    </llibre>
 </biblioteca>

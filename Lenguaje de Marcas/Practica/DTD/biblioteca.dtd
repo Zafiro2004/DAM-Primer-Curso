@@ -1,0 +1,13 @@
+<!ELEMENT biblioteca (llibre+)>
+        <!ELEMENT llibre (titol, autor, any, pagines,generes?)>
+        <!ELEMENT titol (#PCDATA)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT any (#PCDATA)>
+        <!ELEMENT pagines (#PCDATA)>
+        <!ELEMENT genere (#PCDATA)>
+        <!ELEMENT generes (genere+)>
+        <!ATTLIST llibre id ID #REQUIRED>
+        <!ATTLIST llibre idioma (catala|castella|angles|frances) #REQUIRED>
+        <!ATTLIST llibre disponible (si|no) "si">
+        <!ATTLIST llibre estat (disponible|prestat|reservat) #IMPLIED>
+
