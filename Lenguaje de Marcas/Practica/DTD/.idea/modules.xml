@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PracticaDTD.iml" filepath="$PROJECT_DIR$/PracticaDTD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DTD.iml" filepath="$PROJECT_DIR$/DTD.iml" />
     </modules>
   </component>
 </project>
