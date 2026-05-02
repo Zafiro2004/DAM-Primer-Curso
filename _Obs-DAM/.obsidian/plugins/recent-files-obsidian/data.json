@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Validación XML DTD y XSD",
+      "path": "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md"
+    },
+    {
+      "basename": "XML",
+      "path": "DAM-1/LenguajeMarcas/XML/XML.md"
+    },
+    {
+      "basename": "LenguajeMarcas",
+      "path": "DAM-1/LenguajeMarcas/LenguajeMarcas.md"
+    },
+    {
+      "basename": "To-Do",
+      "path": "To-Do.md"
+    },
+    {
       "basename": "GIT",
       "path": "DAM-1/Entornos de desarrollo/GIT.md"
     },
@@ -55,10 +71,6 @@
     {
       "basename": "5.1 - Redes Informáticas",
       "path": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1 - Redes Informáticas.md"
-    },
-    {
-      "basename": "To-Do",
-      "path": "To-Do.md"
     },
     {
       "basename": "Práctica Python",
@@ -187,18 +199,6 @@
     {
       "basename": "U11-DigComp",
       "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11-DigComp.md"
-    },
-    {
-      "basename": "U11 - Aprendizaje autónomo y competencia digital",
-      "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11 - Aprendizaje autónomo y competencia digital.md"
-    },
-    {
-      "basename": "U11-Adquisicion-Competencias-Digitales",
-      "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11-Adquisicion-Competencias-Digitales.md"
-    },
-    {
-      "basename": "U11-Competencia-Digital",
-      "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11-Competencia-Digital.md"
     }
   ],
   "omittedPaths": [],

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<botiga
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="botiga.xsd">>
+    <producte id="p1" categoria="electronica" moneda="EUR">
+        <nom>Portàtil ASUS</nom>
+        <marca>ASUS</marca>
+        <preu>749.99</preu>
+        <stock>15</stock>
+        <etiquetes>
+            <etiqueta>informatica</etiqueta>
+            <etiqueta>oferta</etiqueta>
+        </etiquetes>
+    </producte>
+    <producte id="p2" categoria="roba" estat="esgotat" moneda="EUR">
+        <nom>Samarreta bàsica</nom>
+        <marca>Zara</marca>
+        <preu>12.95</preu>
+        <stock>0</stock>
+    </producte>
+    <producte id="p3" categoria="alimentacio" moneda="EUR">
+        <nom>Oli d'oliva verge extra</nom>
+        <marca>Borges</marca>
+        <preu>8.50</preu>
+        <stock>200</stock>
+        <etiquetes>
+            <etiqueta>eco</etiqueta>
+        </etiquetes>
+    </producte>
+</botiga>

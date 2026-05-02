@@ -12,5 +12,6 @@
   "better-export-pdf",
   "table-editor-obsidian",
   "export-graph-view",
-  "text-extractor"
+  "text-extractor",
+  "github-sync"
 ]
