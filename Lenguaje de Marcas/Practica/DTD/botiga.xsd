@@ -5,28 +5,28 @@
                 <xs:element name="producte" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nom" type="xs:string">
+                            <xs:element name="nom">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                         <xs:minLength value="3"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="marca" type="xs:string">
+                            <xs:element name="marca">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                         <xs:minLength value="2"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="preu" type="xs:decimal">
+                            <xs:element name="preu">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:decimal">
                                         <xs:minExclusive value="0"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="stock" type="xs:integer">
+                            <xs:element name="stock">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:integer">
                                         <xs:minInclusive value="0"/>
@@ -68,7 +68,7 @@
                                 <xs:restriction base="xs:string">
                                     <xs:enumeration value="disponible"/>
                                     <xs:enumeration value="esgotat"/>
-                                    <xs:enumeration value="reservat "/>
+                                    <xs:enumeration value="reservat"/>
                                 </xs:restriction>
                             </xs:simpleType>
                         </xs:attribute>
