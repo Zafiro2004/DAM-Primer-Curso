@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Cosas Random",
+      "path": "Cosas Random.md"
+    },
+    {
+      "basename": "Examen Sistemas",
+      "path": "Examen Sistemas.md"
+    },
+    {
       "basename": "Validación XML DTD y XSD",
       "path": "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md"
     },
@@ -189,16 +197,8 @@
       "path": "DAM-1/Bases de datos/Exercises/Exercises PL_SQL 1.md"
     },
     {
-      "basename": "Examen Sistemas",
-      "path": "Examen Sistemas.md"
-    },
-    {
       "basename": "_PythonNotesForProfessionals",
       "path": "DAM-1/Programación/Python/_PythonNotesForProfessionals.pdf"
-    },
-    {
-      "basename": "U11-DigComp",
-      "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11-DigComp.md"
     }
   ],
   "omittedPaths": [],
