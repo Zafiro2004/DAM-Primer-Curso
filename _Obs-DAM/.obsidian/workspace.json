@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cosas Random.md",
+                "file": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.2 - Modelo TCP-IP.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Cosas Random"
+              "title": "5.2.2 - Modelo TCP-IP"
             }
           }
         ],
@@ -90,54 +90,6 @@
             }
           },
           {
-            "id": "fccaa2a1a4d43ce0",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Validación XML DTD y XSD"
-            }
-          },
-          {
-            "id": "0683a6ebed1a2336",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Enlaces salientes de Validación XML DTD y XSD"
-            }
-          },
-          {
-            "id": "635e85c252d5dbe8",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Etiquetas"
-            }
-          },
-          {
             "id": "d503817d5474140d",
             "type": "leaf",
             "state": {
@@ -153,16 +105,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md",
+                "file": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.2 - Modelo TCP-IP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Validación XML DTD y XSD"
+              "title": "Esquema de 5.2.2 - Modelo TCP-IP"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,37 +133,38 @@
       "obsidian-full-calendar:Open Full Calendar": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "export-graph-view:Export graph view": false,
-      "github-sync:Sync with Remote": false
+      "github-sync:Sync with Remote": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "49621c31c9542851",
   "lastOpenFiles": [
-    "Examen Sistemas.md",
-    "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md",
-    "DAM-1/LenguajeMarcas/XML/XML.md",
-    "DAM-1/LenguajeMarcas/LenguajeMarcas.md",
-    "To-Do.md",
-    "DAM-1/Entornos de desarrollo/GIT.md",
-    "DAM-1/Entornos de desarrollo/Ejercicio UML.md",
-    "DAM-1/Entornos de desarrollo/Ejercicio 6.md",
-    "DAM-1/Entornos de desarrollo/Unidad 6 - Diseño orientado a objetos - Diagramas de comportamiento.md",
-    "DAM-1/Entornos de desarrollo/Unidad 2 - Instalación y uso de entornos de desarrollo.md",
-    "DAM-1/Entornos de desarrollo/Unidad 1 - Desarrollo de Software.md",
-    "DAM-1/Entornos de desarrollo/Máquina de Van Neuman.md",
-    "DAM-1/Entornos de desarrollo/HelloWorld.md",
-    "DAM-1/Sistemas informáticos/Trabajo UR4/Trabajo UR4.md",
-    "DAM-1/Entornos de desarrollo/Entornos de desarrollo.md",
-    "DAM-1/DAM-1.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.1 - Protocolos y Estándares.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Tema 5 - Sistemas Informáticos en Red.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.1 - Modelo OSI.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2 - Modelos de Referencia.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.3 - Mapas Físicos y Lógicos.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.3 - Comparación OSI y TCP-IP.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.2 - Modelo TCP-IP.md",
+    "DAM-1/Sistemas informáticos/Sistemas informáticos.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.6 - Monitorización y Simulación.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Ejercicio.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.6.1 y 5.6.2 - Monitorización y Simulación.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.3 y 5.4.4 - WAN y Conexión a Internet.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.5 - Configuración de Red.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.1 - Redes Cableadas.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4 - Conexión.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.5 - Subnetting.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.6 - Servidores DHCP y DNS.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.4 - Puerta de Enlace.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.2 - Máscara de Subred.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.3 - Clases de Redes IPv4.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.1 - Direcciones IPv4 e IPv6.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3 - Direccionamiento IP.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.2.4 - Protocolos Utilizados en las Redes.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.1 - Protocolos y Estándares.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.2 - Tipos de Redes.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1 - Redes Informáticas.md",
-    "DAM-1/Práctica Python.md",
-    "DAM-1/Programación/Programación.md",
-    "DAM-1/Programación/Teoría/Unidad 5 - Lectura y escritura de archivos en Java/Unidad 5 - Lectura y escritura de archivos en Java.md",
-    "DAM-1/Programación/Python/Diccionarios.md",
-    "DAM-1/Bases de datos/Unit 5 - Triggers/Views y delimitadores en MySQL.md",
-    "DAM-1/Bases de datos/Unit 5 - Triggers/Unit 5 - Triggers.md",
-    "DAM-1/Bases de datos/Unit 5 - Triggers/Introducción a Triggers en MySQL.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red.zip",
     "DAM-1/Programación/Python/_PythonNotesForProfessionals.pdf",
     "DAM-1/Bases de datos/Unit 5 - Triggers",

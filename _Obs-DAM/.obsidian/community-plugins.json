@@ -13,5 +13,6 @@
   "table-editor-obsidian",
   "export-graph-view",
   "text-extractor",
-  "github-sync"
+  "github-sync",
+  "obsidian-git"
 ]
