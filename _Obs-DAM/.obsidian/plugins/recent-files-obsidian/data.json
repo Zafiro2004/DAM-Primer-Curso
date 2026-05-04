@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "To-Do",
+      "path": "To-Do.md"
+    },
+    {
+      "basename": "Examen Sistemas",
+      "path": "Examen Sistemas.md"
+    },
+    {
       "basename": "Práctica Python",
       "path": "DAM-1/Práctica Python.md"
     },
     {
       "basename": "Cosas Random",
       "path": "Cosas Random.md"
-    },
-    {
-      "basename": "Examen Sistemas",
-      "path": "Examen Sistemas.md"
     },
     {
       "basename": "5.4.2 - Redes Inalámbricas",
@@ -129,10 +133,6 @@
       "path": "DAM-1/LenguajeMarcas/LenguajeMarcas.md"
     },
     {
-      "basename": "To-Do",
-      "path": "To-Do.md"
-    },
-    {
       "basename": "GIT",
       "path": "DAM-1/Entornos de desarrollo/GIT.md"
     },
@@ -195,10 +195,6 @@
     {
       "basename": "Unit 5 - Triggers",
       "path": "DAM-1/Bases de datos/Unit 5 - Triggers/Unit 5 - Triggers.md"
-    },
-    {
-      "basename": "Introducción a Triggers en MySQL",
-      "path": "DAM-1/Bases de datos/Unit 5 - Triggers/Introducción a Triggers en MySQL.md"
     }
   ],
   "omittedPaths": [],

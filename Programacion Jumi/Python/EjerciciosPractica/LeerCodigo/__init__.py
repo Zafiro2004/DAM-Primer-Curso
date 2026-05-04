@@ -1,202 +1,284 @@
-# # - - Ejercicio 1
-#
-# x = 5
-#
-# def f(x):
-#     x = x + 2
-#     print(x)
-#
-# f(x)
-# print(x)
-#
-#
-# # - - Ejercicio 2
-#
-# def f(x, y=3):
-#     print(x - y)
-#
-# f(8)
-# f(8, 1)
-#
-#
-# # - - Ejercicio 3
-#
-# def f(d):
-#     d["a"] = d["a"] + 1
-#     print(d["a"])
-#
-# d = {"a": 2, "b": 5}
-# f(d)
-# print(d["a"])
-#
-#
-# # - - Ejercicio 4
-#
-# def f(d):
-#     d["a"].append(4)
-#     print(d["a"])
-#
-# x = {"a": [1, 2], "b": [3]}
-# f(x)
-# print(x["a"])
-#
-#
-# # - - Ejercicio 5
-#
-# def f(d):
-#     d = {"a": d["a"] + [9]}
-#     print(d["a"])
-#
-# x = {"a": [1, 2]}
-# f(x)
-# print(x["a"])
-#
-#
-# # - - Ejercicio 6
-#
-# x = 10
-#
-# def f():
-#     x = 3
-#     print(x)
-#
-# def g():
-#     print(x)
-#
-# f()
-# g()
-# print(x)
-#
-#
-# # - - Ejercicio 7
-#
-# x = 1
-#
-# def f(a):
-#     global x
-#     if a in x:
-#         x[a] = x[a] + 1
-#     else:
-#         x[a] = 1
-#     print(x[a])
-#
-# x = {"p": 2}
-# f("p")
-# f("q")
-# print(x)
-#
-#
-# # - - Ejercicio 8
-#
-# def f(v, p=0):
-#     v[p] = v[p] + 2
-#     print(v[p])
-#     return v[p] - 1
-#
-# def g(v):
-#     print(f(v, 1))
-#     print(f(v))
-#
-# a = [3, 4, 5]
-# g(a)
-# print(a)
-#
-#
-# # - - Ejercicio 9
-#
-# def f(d, k):
-#     d[k].append(len(d[k]))
-#     print(d[k][-1])
-#     return d[k][0]
-#
-# def g(d):
-#     x = 0
-#     for k in d:
-#         if len(d[k]) % 2 == 0:
-#             x = x + f(d, k)
-#         else:
-#             x = x + len(d[k])
-#     print(x)
-#
-# a = {"x": [1, 2], "y": [3], "z": [4, 5]}
-# g(a)
-# print(a)
-#
-#
-# # - - Ejercicio 10
-#
-# def f(a):
-#     global x
-#     if a % 2 == 0:
-#         x = x + a
-#     else:
-#         x = x * a
-#     return x
-#
-# def g(d):
-#     for x in d:
-#         if len(d[x]) > 1:
-#             print(f(d[x][0]))
-#         else:
-#             print(d[x][0])
-#
-# x = 2
-# a = {"p": [1], "q": [3, 4], "r": [2, 5]}
-# g(a)
-# print(x)
-#
-#
-# # - - Ejercicio 11
-#
-def f(d, k):
-    if k in d:
-        if len(d[k]) > 1:
-            d[k][0] = d[k][0] + d[k][1]
-        else:
-            d[k].append(0)
-        print(d[k][0])
-        return len(d[k])
-    return 0
+# ==============================================================================
+# BLOQUE 1 — SEGUIR EL VALOR (traza de ejecución)
+# ==============================================================================
 
-def g(d):
-    x = 0
+# ── Ejercicio 1 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 1 ---")
+def f(n):
+    if n == 0:
+        return 0
+    return n + f(n - 1)
+print(f(4))
+print(f(1))
+# Respuesta:
+# f(4) → __
+# f(1) → __
+
+# ── Ejercicio 2 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 2 ---")
+def f(n):
+    if n == 0:
+        return 1
+    return n * f(n - 1)
+print(f(5))
+print(f(0))
+# Respuesta:
+# f(5) → __
+# f(0) → __
+# ── Ejercicio 3 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 3 ---")
+def f(n):
+    if n <= 0:
+        return
+    print(n)
+    f(n - 2)
+f(6)
+# Respuesta:
+# __
+# __
+# __
+# ── Ejercicio 4 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 4 ---")
+def f(n):
+    if n <= 0:
+        return
+    f(n - 1)
+    print(n)
+f(4)
+# Respuesta:
+# __
+# __
+# __
+# __
+
+# ── Ejercicio 5 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 5 ---")
+def f(n):
+    if n == 0:
+        print("base")
+        return
+    print("baixada", n)
+    f(n - 1)
+    print("pujada", n)
+f(3)
+# Respuesta:
+# __
+# __
+# __
+# __
+# __
+# __
+# __
+# ── Ejercicio 6 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 6 ---")
+def f(n):
+    if n == 0:
+        return 0
+    if n % 2 == 0:
+        return f(n - 1) + 10
+    else:
+        return f(n - 1) + 1
+print(f(5))
+# Respuesta:
+# f(5) → __
+# ── Ejercicio 7 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 7 ---")
+def f(n):
+    if n == 0:
+        return 0
+    return f(n - 1) * 2 + 1
+print(f(4))
+# Respuesta:
+# f(4) → __
+# ── Ejercicio 8 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 8 ---")
+def f(a, b):
+    if b == 0:
+        return a
+    return f(b, a % b)
+print(f(12, 8))
+print(f(9, 6))
+# Respuesta:
+# f(12, 8) → __
+# f(9, 6) → __
+# ── Ejercicio 9 ──────────────────────────────────────────────────────────────
+print("--- Ejercicio 9 ---")
+def f(n):
+    if n <= 1:
+        return n
+    return f(n - 1) + f(n - 2)
+print(f(6))
+print(f(3))
+# Respuesta:
+# f(6) → __
+# f(3) → __
+# ── Ejercicio 10 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 10 ---")
+def f(v, p):
+    if p == len(v):
+        return 0
+    return v[p] + f(v, p + 1)
+llista = [3, 1, 4, 1, 5]
+print(f(llista, 0))
+print(f(llista, 2))
+# Respuesta:
+# f(llista, 0) → __
+# f(llista, 2) → __
+# ── Ejercicio 11 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 11 ---")
+def f(v, p):
+    if p < 0:
+        return
+    print(v[p])
+    f(v, p - 1)
+llista = [10, 20, 30]
+f(llista, 2)
+# Respuesta:
+# __
+# __
+# __
+# ── Ejercicio 12 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 12 ---")
+def f(n, acc=0):
+    if n == 0:
+        return acc
+    return f(n - 1, acc + n)
+print(f(5))
+print(f(3, 10))
+# Respuesta:
+# f(5) → __
+# f(3, 10) → __
+# ── Ejercicio 13 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 13 ---")
+def f(n):
+    if n == 0:
+        return 0
+    return 1 + f(n // 2)
+print(f(8))
+print(f(16))
+# Respuesta:
+# f(8) → __
+# f(16) → __
+# ── Ejercicio 14 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 14 ---")
+def f(s):
+    if len(s) == 0:
+        return True
+    if s[0] != s[-1]:
+        return False
+    return f(s[1:-1])
+print(f("radar"))
+print(f("python"))
+print(f("a"))
+# Respuesta:
+# f("radar") → __
+# f("python") → __
+# f("a") → __
+# ── Ejercicio 15 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 15 ---")
+def f(v, n):
+    if not v:
+        return 0
+    return (1 if v[0] == n else 0) + f(v[1:], n)
+llista = [1, 3, 1, 2, 1]
+print(f(llista, 1))
+print(f(llista, 5))
+# Respuesta:
+# f(llista, 1) → __
+# f(llista, 5) → __
+# ── Ejercicio 16 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 16 ---")
+x = 0
+def f(n):
+    global x
+    if n == 0:
+        return
+    x += n
+    f(n - 1)
+f(4)
+print(x)
+f(2)
+print(x)
+# Respuesta:
+# primera print → __
+# segunda print → __
+# ── Ejercicio 17 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 17 ---")
+def f(n):
+    if n <= 0:
+        return 0
+    return f(n - 3) + f(n - 1)
+print(f(4))
+# Respuesta:
+# f(4) → __
+# ── Ejercicio 18 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 18 ---")
+def f(v, p=0):
+    if p >= len(v):
+        return
+    if v[p] % 2 == 0:
+        print(v[p])
+    f(v, p + 1)
+f([1, 2, 3, 4, 5, 6])
+# Respuesta:
+# __
+# __
+# __
+# ── Ejercicio 19 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 19 ---")
+def f(n, prof=0):
+    if n == 0:
+        print(" " * prof + "0")
+        return
+    print(" " * prof + str(n))
+    f(n - 1, prof + 2)
+    print(" " * prof + str(n))
+f(3)
+# Respuesta:
+# __
+# __
+# __
+# __
+# __
+# __
+# __
+# ── Ejercicio 20 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 20 ---")
+def f(d, n):
+    if n == 0:
+        return d
+    nou = {}
     for k in d:
-        if k % 2 == 0:
-            x = x + f(d, k)
-        else:
-            x = x + len(d[k])
-    print(x)
+        nou[k] = d[k] * 2
+    return f(nou, n - 1)
+resultat = f({"a": 1, "b": 2}, 3)
+print(resultat)
+# Respuesta:
+# __
+# ==============================================================================
+# BLOQUE 2 — EJERCICIOS SIN FINALIDAD PRÁCTICA (traza pura, como los exámenes)
+# ==============================================================================
 
-a = {
-    0: [2, 3],
-    1: [4],
-    2: [1],
-    3: [5, 6]
-}
-g(a)
-print(a)
-
-#
-# # - - Ejercicio 12
-#
-# def f(d, k):
-#     d[k][0] = d[k][0] + len(d[k])
-#     print(d[k][0])
-#     return d[k][-1]
-#
-# def g(d):
-#     global x
-#     y = 0
-#     for k in d:
-#         if d[k][0] % 2 == 0:
-#             y = y + f(d, k)
-#         else:
-#             d[k].append(y)
-#             print(d[k][-1])
-#             y = y + len(d[k])
-#     x = d
-#     return y
-#
-# x = {"a": [2, 1], "b": [3, 4], "c": [4]}
-# print(g(x))
-# print(x)
+# ── Ejercicio 21 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 21 ---")
+def f(n, k):
+    if n <= 0:
+        return k
+    return f(n - 1, k + n) + f(n - 2, k)
+print(f(3, 0))
+# Respuesta:
+# __
+# ── Ejercicio 22 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 22 ---")
+resultat = []
+def f(n):
+    if n == 0:
+        return
+    f(n - 1)
+    resultat.append(n * 2)
+f(4)
+print(resultat)
+print(len(resultat))
+# Respuesta:
+# resultat → __
+# len → __

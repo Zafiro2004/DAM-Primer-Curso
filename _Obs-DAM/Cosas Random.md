@@ -1,22 +1,51 @@
 ```mermaid
 graph TD
-    %% Llamada principal
-    F4["fib(4)"] --> F3["fib(3)"]
-    F4 --> F2_A["fib(2)"]
+    %% Nodo Raíz
+    F6[F6: 8] --> F5[F5: 5]
+    F6 --> F4[F4: 3]
 
-    %% Rama izquierda de fib(3)
-    F3 --> F2_B["fib(2)"]
-    F3 --> F1_A["fib(1) <br> (Retorna 1)"]
+    %% Rama F5
+    F5 --> F4a[F4: 3]
+    F5 --> F3a[F3: 2]
 
-    %% Rama derecha de la llamada principal fib(2)
-    F2_A --> F1_B["fib(1) <br> (Retorna 1)"]
-    F2_A --> F0_A["fib(0) <br> (Retorna 0)"]
+    %% Rama F4 (de F6)
+    F4 --> F3b[F3: 2]
+    F4 --> F2a[F2: 1]
 
-    %% Sub-rama del fib(2) que viene del fib(3)
-    F2_B --> F1_C["fib(1) <br> (Retorna 1)"]
-    F2_B --> F0_B["fib(0) <br> (Retorna 0)"]
+    %% Rama F4a (de F5)
+    F4a --> F3c[F3: 2]
+    F4a --> F2b[F2: 1]
 
-    %% Estilos para destacar los casos base
-    classDef baseCase fill:#d4edda,stroke:#28a745,stroke-width:2px,color:black;
-    class F1_A,F1_B,F0_A,F1_C,F0_B baseCase;
+    %% Rama F3a (de F5)
+    F3a --> F2c[F2: 1]
+    F3a --> F1a[F1: 1]
+
+    %% Rama F3b (de F4)
+    F3b --> F2d[F2: 1]
+    F3b --> F1b[F1: 1]
+
+    %% Sub-ramas de F2 y F3 restantes
+    F2a --> F1c[F1: 1]
+    F2a --> F0a[F0: 0]
+
+    F3c --> F2e[F2: 1]
+    F3c --> F1d[F1: 1]
+
+    F2b --> F1e[F1: 1]
+    F2b --> F0b[F0: 0]
+
+    F2c --> F1f[F1: 1]
+    F2c --> F0c[F0: 0]
+
+    F2d --> F1g[F1: 1]
+    F2d --> F0d[F0: 0]
+
+    F2e --> F1h[F1: 1]
+    F2e --> F0e[F0: 0]
+    
+    %% Estilo para los casos base
+    style F1a fill:#f9f,stroke:#333
+    style F1b fill:#f9f,stroke:#333
+    style F1c fill:#f9f,stroke:#333
+    style F0a fill:#ddd,stroke:#333
 ```
