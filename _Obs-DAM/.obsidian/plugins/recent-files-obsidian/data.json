@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Práctica Python",
+      "path": "DAM-1/Práctica Python.md"
+    },
+    {
+      "basename": "Cosas Random",
+      "path": "Cosas Random.md"
+    },
+    {
+      "basename": "Examen Sistemas",
+      "path": "Examen Sistemas.md"
+    },
+    {
       "basename": "5.4.2 - Redes Inalámbricas",
       "path": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md"
     },
@@ -105,14 +117,6 @@
       "path": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1 - Redes Informáticas.md"
     },
     {
-      "basename": "Cosas Random",
-      "path": "Cosas Random.md"
-    },
-    {
-      "basename": "Examen Sistemas",
-      "path": "Examen Sistemas.md"
-    },
-    {
       "basename": "Validación XML DTD y XSD",
       "path": "DAM-1/LenguajeMarcas/XML/Validación XML DTD y XSD.md"
     },
@@ -171,10 +175,6 @@
     {
       "basename": "DAM-1",
       "path": "DAM-1/DAM-1.md"
-    },
-    {
-      "basename": "Práctica Python",
-      "path": "DAM-1/Práctica Python.md"
     },
     {
       "basename": "Programación",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md",
-                "mode": "preview",
+                "file": "DAM-1/Práctica Python.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "5.4.2 - Redes Inalámbricas"
+              "title": "Práctica Python"
             }
           }
         ],
@@ -113,6 +113,54 @@
               "icon": "lucide-list",
               "title": "Esquema de 5.4.2 - Redes Inalámbricas"
             }
+          },
+          {
+            "id": "c9368f4801b48547",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Cosas Random.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Cosas Random"
+            }
+          },
+          {
+            "id": "71bbc39675468852",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Cosas Random.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Cosas Random"
+            }
+          },
+          {
+            "id": "b9c27eef66ee192c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
           }
         ],
         "currentTab": 1
@@ -139,6 +187,9 @@
   },
   "active": "49621c31c9542851",
   "lastOpenFiles": [
+    "Cosas Random.md",
+    "Examen Sistemas.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.1 - Redes Cableadas.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4 - Conexión.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.6 - Servidores DHCP y DNS.md",
@@ -161,10 +212,7 @@
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.6.1 y 5.6.2 - Monitorización y Simulación.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.3 y 5.4.4 - WAN y Conexión a Internet.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.5 - Configuración de Red.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.1 - Protocolos y Estándares.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1.2 - Tipos de Redes.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.1 - Redes Informáticas.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red.zip",
     "DAM-1/Programación/Python/_PythonNotesForProfessionals.pdf",
     "DAM-1/Bases de datos/Unit 5 - Triggers",
