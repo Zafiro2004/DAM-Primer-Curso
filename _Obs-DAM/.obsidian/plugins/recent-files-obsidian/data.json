@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Práctica Python",
+      "path": "DAM-1/Práctica Python.md"
+    },
+    {
+      "basename": "Trabajo",
+      "path": "DAM-1/Digitalización aplicada a los sectores productivos/Trabajo.md"
+    },
+    {
+      "basename": "Ejercicio 6",
+      "path": "DAM-1/Entornos de desarrollo/Ejercicio 6.md"
+    },
+    {
+      "basename": "U11 - Aprendizaje autónomo y competencia digital",
+      "path": "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11 - Aprendizaje autónomo y competencia digital.md"
+    },
+    {
       "basename": "JavaScript",
       "path": "DAM-1/LenguajeMarcas/JavaScript/JavaScript.md"
     },
@@ -47,10 +63,6 @@
     {
       "basename": "To-Do",
       "path": "To-Do.md"
-    },
-    {
-      "basename": "Práctica Python",
-      "path": "DAM-1/Práctica Python.md"
     },
     {
       "basename": "Examen Sistemas",
@@ -181,24 +193,12 @@
       "path": "DAM-1/Entornos de desarrollo/Ejercicio UML.md"
     },
     {
-      "basename": "Ejercicio 6",
-      "path": "DAM-1/Entornos de desarrollo/Ejercicio 6.md"
-    },
-    {
       "basename": "Unidad 6 - Diseño orientado a objetos - Diagramas de comportamiento",
       "path": "DAM-1/Entornos de desarrollo/Unidad 6 - Diseño orientado a objetos - Diagramas de comportamiento.md"
     },
     {
       "basename": "Unidad 2 - Instalación y uso de entornos de desarrollo",
       "path": "DAM-1/Entornos de desarrollo/Unidad 2 - Instalación y uso de entornos de desarrollo.md"
-    },
-    {
-      "basename": "Unidad 1 - Desarrollo de Software",
-      "path": "DAM-1/Entornos de desarrollo/Unidad 1 - Desarrollo de Software.md"
-    },
-    {
-      "basename": "Máquina de Van Neuman",
-      "path": "DAM-1/Entornos de desarrollo/Máquina de Van Neuman.md"
     }
   ],
   "omittedPaths": [],
