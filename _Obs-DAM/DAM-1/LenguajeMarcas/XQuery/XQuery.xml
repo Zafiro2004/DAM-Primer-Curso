@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApuntesXQuery>
+    <Definicio>
+        <Proces>
+            <Entrada>XML (.xml)</Entrada>
+            <Motor>XQuery (.xq)</Motor>
+            <Sortida>Resultat (XML, HTML, text)</Sortida>
+        </Proces>
+    </Definicio>
+    <Operacions>
+        <Operacio id="1" nom="Obrir document">doc("fitxer.xml")</Operacio>
+        <Operacio id="2" nom="Navegar amb XPath">camins amb "/"</Operacio>
+        <Operacio id="3" nom="Seleccionar contingut">/text()</Operacio>
+        <Operacio id="4" nom="Seleccionar atributs">/@atribut</Operacio>
+        <Operacio id="5" nom="Seleccionar valor node">/data()</Operacio>
+        <Operacio id="6" nom="Filtrar elements">[condicio] (usant elements o atributs)</Operacio>
+    </Operacions>
+</ApuntesXQuery>
