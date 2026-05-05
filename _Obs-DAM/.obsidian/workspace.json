@@ -11,22 +11,14 @@
             "id": "49621c31c9542851",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "To-Do.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "DAM-1/Práctica Python.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-trello",
-              "title": "To-Do"
+              "icon": "lucide-file",
+              "title": "Práctica Python"
             }
           }
         ],
@@ -195,8 +187,8 @@
   },
   "active": "49621c31c9542851",
   "lastOpenFiles": [
-    "Examen Sistemas.md",
     "To-Do.md",
+    "Examen Sistemas.md",
     "Pasted image 20260504190046.png",
     "DAM-1/Práctica Python.md",
     "Cosas Random.md",

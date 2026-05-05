@@ -282,3 +282,34 @@ print(len(resultat))
 # Respuesta:
 # resultat → __
 # len → __
+# ── Ejercicio 23 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 23 ---")
+def f(a, b, depth=0):
+    if a > b:
+        return 0
+    mid = (a + b) // 2
+    print(depth, mid)
+    return f(a, mid - 1, depth + 1) + f(mid + 1, b, depth + 1) + 1
+print(f(1, 7))
+# Respuesta:
+# (escribe cada print en orden)
+# __
+# __
+# __
+# __
+# __
+# __
+# __
+# print final → __
+# ── Ejercicio 24 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 24 ---")
+def f(v):
+    if len(v) <= 1:
+        return v
+    mig = len(v) // 2
+    return f(v[mig:]) + f(v[:mig])
+print(f([1, 2, 3, 4]))
+print(f([10, 20]))
+# Respuesta:
+# f([1,2,3,4]) → __
+# f([10,20]) → __
