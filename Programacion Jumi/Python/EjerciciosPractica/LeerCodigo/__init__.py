@@ -313,3 +313,363 @@ print(f([10, 20]))
 # Respuesta:
 # f([1,2,3,4]) → __
 # f([10,20]) → __
+# ── Ejercicio 25 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 25 ---")
+crides = 0
+def f(n):
+    global crides
+    crides += 1
+    if n <= 1:
+        return n
+    return f(n - 1) + f(n - 2)
+resultat = f(5)
+print(resultat)
+print(crides)
+# Respuesta:
+# resultat → __
+# crides → __
+print("--- Ejercicio 26 ---")
+def f(d, n):
+    if n == 0 or not d:
+        return 0
+    clau = list(d.keys())[0]
+    resta = {k: d[k] for k in list(d.keys())[1:]}
+    return d[clau] + f(resta, n - 1)
+dades = {"a": 3, "b": 5, "c": 2}
+print(f(dades, 2))
+print(f(dades, 10))
+# Respuesta:
+# f(dades, 2) → __
+# f(dades, 10) → __
+# ── Ejercicio 27 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 27 ---")
+def f(s, i=0):
+    if i >= len(s):
+        return 0
+    return (1 if s[i].isupper() else 0) + f(s, i + 1)
+print(f("HolaMon"))
+print(f("python"))
+# Respuesta:
+# f("HolaMon") → __
+# f("python") → __
+
+# ── Ejercicio 28 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 28 ---")
+def f(n):
+    if n == 1:
+        return [1]
+    anterior = f(n - 1)
+    return anterior + [anterior[-1] * 2]
+print(f(5))
+# Respuesta:
+# __
+# ── Ejercicio 29 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 29 ---")
+def f(v, esquerra, dreta):
+    if esquerra > dreta:
+        return -1
+    mig = (esquerra + dreta) // 2
+    print("mirant", mig, v[mig])
+    if v[mig] == 7:
+        return mig
+    elif v[mig] < 7:
+        return f(v, mig + 1, dreta)
+    else:
+        return f(v, esquerra, mig - 1)
+v = [1, 3, 5, 7, 9, 11]
+print(f(v, 0, len(v) - 1))
+# Respuesta:
+# (escribe cada print en orden)
+# __
+# __
+# __
+# ── Ejercicio 30 ─────────────────────────────────────────────────────────────
+print("--- Ejercicio 30 ---")
+def f(n, indent=0):
+    if n == 0:
+        return 0
+    a = f(n - 1, indent + 1)
+    b = f(n - 1, indent + 1)
+    total = a + b + n
+    print(" " * indent + str(total))
+    return total
+f(3)
+# Respuesta:
+# (escribe cada print en orden, con sus espacios)
+# __
+# __
+# __
+# __
+# __
+# __
+# __
+# ==============================================================================
+# BLOQUE 3 — TURTLE: DESCRIBE EL DIBUJO
+# ==============================================================================
+# En estos ejercicios NO se ejecuta código: describes qué dibuja la tortuga.
+
+# ── Ejercicio 31 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 31 ---
+# from turtle import *
+# speed(0)
+# def f(level, size):
+#     if level == 0:
+#         forward(size)
+#         return
+#     f(level - 1, size / 3)
+#     left(60)
+#     f(level - 1, size / 3)
+#     right(120)
+#     f(level - 1, size / 3)
+#     left(60)
+#     f(level - 1, size / 3)
+# for i in range(3):
+#     f(1, 300)
+#     right(120)
+# done()
+# Describe el dibujo resultante:
+# _______________________
+# _______________________
+
+# ── Ejercicio 32 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 32 ---
+# from turtle import *
+# speed(0)
+# def f(level, size):
+#     if level == 0:
+#         forward(size)
+#         return
+#     f(level - 1, size / 3)
+#     left(60)
+#     f(level - 1, size / 3)
+#     right(120)
+#     f(level - 1, size / 3)
+#     left(60)
+#     f(level - 1, size / 3)
+# for i in range(3):
+#     f(3, 300)
+#     right(120)
+# done()
+# ¿En qué se diferencia del ejercicio 31?
+# _______________________
+# _______________________
+
+# ── Ejercicio 33 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 33 ---
+# from turtle import *
+# speed(0)
+# def arbre(level, size):
+#     if level == 0:
+#         return
+#     forward(size)
+#     left(30)
+#     arbre(level - 1, size * 0.7)
+#     right(60)
+#     arbre(level - 1, size * 0.7)
+#     left(30)
+#     backward(size)
+# penup()
+# goto(0, -200)
+# setheading(90)
+# pendown()
+# arbre(5, 100)
+# done()
+# Describe la forma general del dibujo y explica qué hace backward(size):
+# _______________________
+# _______________________
+
+# ── Ejercicio 34 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 34 ---
+# from turtle import *
+# speed(0)
+# def arbre(level, size):
+#     if level == 0:
+#         return
+#     forward(size)
+#     left(30)
+#     arbre(level - 1, size * 0.7)
+#     right(60)
+#     arbre(level - 1, size * 0.7)
+#     left(30)
+#     backward(size)
+# penup()
+# goto(0, -200)
+# setheading(90)
+# pendown()
+# arbre(5, 100)
+# # Ahora se elimina backward(size):
+# def arbre_sense_back(level, size):
+#     if level == 0:
+#         return
+#     forward(size)
+#     left(30)
+#     arbre_sense_back(level - 1, size * 0.7)
+#     right(60)
+#     arbre_sense_back(level - 1, size * 0.7)
+#     left(30)
+#     # SIN backward
+# penup()
+# goto(200, -200)
+# setheading(90)
+# pendown()
+# arbre_sense_back(4, 80)
+# done()
+# ¿Qué diferencia visual hay entre arbre y arbre_sense_back?
+# _______________________
+# _______________________
+
+# ── Ejercicio 35 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 35 ---
+# from turtle import *
+# speed(0)
+# def sierpinski(level, size):
+#     if level == 0:
+#         return
+#     sierpinski(level - 1, size / 2)
+#     forward(size)
+#     left(-120)
+#     sierpinski(level - 1, size / 2)
+#     forward(size)
+#     left(-120)
+#     sierpinski(level - 1, size / 2)
+#     forward(size)
+#     left(-120)
+# penup()
+# goto(-150, -100)
+# pendown()
+# sierpinski(4, 300)
+# done()
+# a) ¿Qué figura genera este código a nivel alto?
+# b) ¿Cuántos triángulos "vacíos" hay en el nivel 2 (level=2)?
+# _______________________
+# _______________________
+
+# ── Ejercicio 36 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 36 ---
+# from turtle import *
+# speed(0)
+# def quadrat(level, size):
+#     if level == 0:
+#         for _ in range(4):
+#             forward(size)
+#             right(90)
+#         return
+#     quadrat(level - 1, size / 3)
+#     forward(size)
+#     quadrat(level - 1, size / 3)
+#     right(90)
+#     forward(size)
+#     quadrat(level - 1, size / 3)
+#     left(90)
+#     forward(size)
+#     quadrat(level - 1, size / 3)
+# penup()
+# goto(-150, 150)
+# pendown()
+# quadrat(2, 270)
+# done()
+# a) ¿Qué dibuja cuando level == 0?
+# b) ¿Cuántas llamadas recursivas hay por nivel?
+# _______________________
+# _______________________
+
+# ── Ejercicio 37 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 37 ---
+# from turtle import *
+# speed(0)
+# bgcolor("black")
+# pencolor("white")
+# def espiral(level, size, angle):
+#     if level == 0:
+#         return
+#     forward(size)
+#     right(angle)
+#     espiral(level - 1, size + 5, angle)
+# espiral(60, 5, 89)
+# done()
+# Describe la forma que genera espiral(60, 5, 89).
+# ¿Qué pasaría si angle fuera 90 exacto en lugar de 89?
+# _______________________
+# _______________________
+
+# ── Ejercicio 38 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 38 ---
+# from turtle import *
+# speed(0)
+# def hilbert(level, angle, size):
+#     if level == 0:
+#         return
+#     right(angle)
+#     hilbert(level - 1, -angle, size)
+#     forward(size)
+#     left(angle)
+#     hilbert(level - 1, angle, size)
+#     forward(size)
+#     hilbert(level - 1, angle, size)
+#     left(angle)
+#     forward(size)
+#     hilbert(level - 1, -angle, size)
+#     right(angle)
+# penup()
+# goto(-150, 150)
+# pendown()
+# setheading(0)
+# hilbert(3, 90, 20)
+# done()
+# a) ¿Qué hace pasar -angle en algunas llamadas recursivas?
+# b) ¿Qué propiedad especial tiene la curva de Hilbert respecto al espacio?
+# _______________________
+# _______________________
+
+# ── Ejercicio 39 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 39 ---
+# from turtle import *
+# speed(0)
+# bgcolor("black")
+# colors = ["#FF0000", "#FF7700", "#FFFF00", "#00FF00", "#0000FF"]
+# def estrella(level, size):
+#     if level == 0:
+#         return
+#     pencolor(colors[level % len(colors)])
+#     for _ in range(5):
+#         forward(size)
+#         right(144)
+#     estrella(level - 1, size * 0.6)
+# estrella(5, 200)
+# done()
+# a) ¿Cuántas estrellas se dibujan en total?
+# b) ¿Cada estrella tiene el mismo tamaño? Explica la relación entre niveles.
+# c) ¿Qué controla colors[level % len(colors)]?
+# _______________________
+# _______________________
+
+# ── Ejercicio 40 ─────────────────────────────────────────────────────────────
+# --- Ejercicio 40 ---
+# from turtle import *
+# speed(0)
+# bgcolor("black")
+# pencolor("white")
+# def branques(level, size, angle):
+#     if level == 0:
+#         return
+#     pensize(level)
+#     forward(size)
+#     left(angle)
+#     branques(level - 1, size * 0.75, angle)
+#     right(angle * 2)
+#     branques(level - 1, size * 0.75, angle)
+#     left(angle)
+#     backward(size)
+# penup()
+# goto(0, -250)
+# setheading(90)
+# pendown()
+# for a in [20, 35]:
+#     branques(6, 100, a)
+# done()
+# a) ¿Por qué se llama branques dos veces desde el programa principal con ángulos distintos?
+# b) ¿Qué efecto tiene pensize(level) en el dibujo?
+# c) ¿Qué hace left(angle) / right(angle*2) / left(angle) juntos?
+# _______________________
+# _______________________
+# _______________________
