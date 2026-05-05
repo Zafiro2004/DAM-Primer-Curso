@@ -6,13 +6,11 @@ kanban-plugin: board
 
 ## #examenes
 
-- [ ] Recursividad Jumi @{05-05-2026}
 - [ ] [[Examen Lenguaje]] @{08-05-2026}
 - [ ] [[Examen Bases Antoni]]
 	@{08-05-2026}
 - [ ] [[Examen IPO]] @{11-05-2026}
 - [ ] [[Examen Sistemas]] @{12-05-2026}
-- [ ] Funciones y Diccionarios @{12-05-2026}
 - [ ] Recuperacion Jumi Funciones y Diccionarios @{12-05-2026}
 - [ ] [[Examen Programación]] @{14-05-2026}
 - [ ] Examen Bases Macia @{15-05-2026}
@@ -20,6 +18,7 @@ kanban-plugin: board
 
 ## #todo
 
+- [ ] Ejercicios Macia
 
 
 ## #inprogress
@@ -77,6 +76,7 @@ kanban-plugin: board
 - [ ] Ejercicios Bases de Datos Macia
 - [ ] [[PLE]]
 - [ ] Teoría Toni
+- [ ] Recursividad Jumi @{05-05-2026}
 
 %% kanban:settings
 ```
