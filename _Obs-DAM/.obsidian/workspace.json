@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DAM-1/Práctica Python.md",
-                "mode": "preview",
+                "file": "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Tema 5 - Sistemas Informáticos en Red.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Práctica Python"
+              "title": "Tema 5 - Sistemas Informáticos en Red"
             }
           }
         ],
@@ -185,6 +185,12 @@
   },
   "active": "49621c31c9542851",
   "lastOpenFiles": [
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.3 - WAN.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Tema 5 - Sistemas Informáticos en Red.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.4 - Conexión a Internet.md",
+    "DAM-1/Sistemas informáticos/Sistemas informáticos.md",
+    "DAM-1/DAM-1.md",
+    "DAM-1/Práctica Python.md",
     "DAM-1/Digitalización aplicada a los sectores productivos/Trabajo.md",
     "DAM-1/Entornos de desarrollo/Ejercicio 6.md",
     "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11 - Aprendizaje autónomo y competencia digital.md",
@@ -203,18 +209,12 @@
     "DAM-1/LenguajeMarcas/XQuery.xml",
     "DAM-1/!Examenes/Examen Lenguaje.md",
     "To-Do.md",
-    "DAM-1/Práctica Python.md",
     "Examen Sistemas.md",
     "Pasted image 20260504190046.png",
     "Cosas Random.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.1 - Redes Cableadas.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4 - Conexión.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.6 - Servidores DHCP y DNS.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Tema 5 - Sistemas Informáticos en Red.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.5 - Subnetting.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.4 - Puerta de Enlace.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.3 - Clases de Redes IPv4.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red.zip",
     "DAM-1/Programación/Python/_PythonNotesForProfessionals.pdf",
     "DAM-1/Bases de datos/Unit 5 - Triggers",

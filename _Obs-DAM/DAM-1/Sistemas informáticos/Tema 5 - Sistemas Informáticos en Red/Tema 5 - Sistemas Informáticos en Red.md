@@ -21,10 +21,8 @@
 - [[5.4 - Conexión]]
 	- [[5.4.1 - Redes Cableadas]]
 	- [[5.4.2 - Redes Inalámbricas]]
-	- [[5.4.3 y 5.4.4 - WAN y Conexión a Internet]]
-- [[5.5 - Configuración de Red]]
-- [[5.6 - Monitorización y Simulación]]
-	- [[5.6.1 y 5.6.2 - Monitorización y Simulación]]
+	- [[5.4.3 - WAN]]
+	- [[5.4.4 - Conexión a Internet]]
 
 ---
 
