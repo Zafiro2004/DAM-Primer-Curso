@@ -1,21 +1,16 @@
 ```mermaid
 flowchart TD
-    A([Inicio: Procedimiento con p_referencia y p_nueva_tasa]) --> B{¿Es p_nueva_tasa > 0?}
-    B -- No (Tasa incorrecta) --> C[/Imprimir: Error, tasa no válida/]
-    C --> K([Fin])
+    A([Inicio: updAllPurchases]) --> B[/"Imprimir Cabecera: Code | Name | Purchases"/]
+    B --> C[OPEN cust_cur FOR UPDATE]
+    C --> D[FETCH cust_cur INTO cust_rec]
+    D --> E{¿cust_cur%notfound?}
     
-    B -- Sí (Tasa correcta) --> D[Abrir Cursor de LANDREGISTRY]
-    D --> E[FETCH cursor]
-    E --> F{¿NOTFOUND?}
-    F -- Sí --> G[/Imprimir: Propiedad no encontrada / Fin bucle/]
-    G --> J[Cerrar Cursor y COMMIT]
+    E -- No --> F[/"SELECT SUM(Amount) INTO v_total FROM Purchase WHERE Client = cust_rec.DNI"/]
+    F --> G[UPDATE CUSTOMER SET Purchases = v_total WHERE CURRENT OF cust_cur]
+    G --> H[/"Imprimir Detalle: cust_rec.DNI | cust_rec.Name | v_total"/]
+    H --> D
     
-    F -- No --> H{¿REFERENCE del cursor == p_referencia?}
-    H -- Sí --> I[UPDATE LANDREGISTRY SET TAX_RATE...]
-    I --> I2[/Imprimir: Tasa actualizada con éxito/]
-    I2 --> J
-    
-    H -- No --> E
-    
-    J --> K
+    E -- Sí --> I[CLOSE cust_cur]
+    I --> J[(COMMIT)]
+    J --> K([Fin])
 ```
