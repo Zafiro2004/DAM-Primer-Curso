@@ -98,6 +98,6 @@ Entonces este documento es bien formado pero NO válido ❌:
 🔗 Relacionado:
 
 - [[Espacios de nombres en XML]]
-- [[Validación XML: DTD y XSD]]
+- [[Validación XML DTD y XSD]]
 
 #xml #validacion #bien-formado #valido
