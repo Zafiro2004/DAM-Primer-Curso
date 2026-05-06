@@ -37,20 +37,20 @@ import turtle
 # ejercicio_2(200, 2)
 #
 #
-# # Pregunta 3
-# def ejercicio_3(l, n):
-#     if n == 0:
-#         turtle.forward(l)
-#         return
-#
-#     turtle.left(45)
-#     ejercicio_3(l, n - 1)
-#     turtle.right(90)
-#     ejercicio_3(l, n - 1)
-#     turtle.left(45)
-#
-#
-# ejercicio_3(50, 4)
+# Pregunta 3
+def ejercicio_3(l, n):
+    if n == 0:
+        turtle.forward(l)
+        return
+
+    turtle.left(45)
+    ejercicio_3(l, n - 1)
+    turtle.right(90)
+    ejercicio_3(l, n - 1)
+    turtle.left(45)
+
+
+ejercicio_3(50, 4)
 #
 #
 # # Pregunta 4
