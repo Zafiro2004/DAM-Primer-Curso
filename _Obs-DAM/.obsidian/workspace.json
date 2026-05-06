@@ -11,22 +11,14 @@
             "id": "49621c31c9542851",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "To-Do.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "Cosas Random.md",
+                "mode": "preview",
+                "source": true
               },
-              "icon": "lucide-trello",
-              "title": "To-Do"
+              "icon": "lucide-file",
+              "title": "Cosas Random"
             }
           }
         ],
@@ -93,8 +85,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -103,8 +95,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -188,26 +180,19 @@
       "obsidian-kanban:Create new board": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "export-graph-view:Export graph view": false
+      "export-graph-view:Export graph view": false,
+      "github-sync:Sync with Remote": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "49621c31c9542851",
   "lastOpenFiles": [
-    "Cosas Random.md",
-    "DAM-1/!Examenes/Examen Sistemas.md",
-    "To-Do.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/Tema 5 - Sistemas Informáticos en Red.md",
-    "DAM-1/!Examenes/Examen Lenguaje.md",
-    "DAM-1/!Examenes/Examen Programación.md",
-    "DAM-1/!Examenes/Examen Bases Antoni.md",
-    "DAM-1/!Examenes/Examen IPO.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.3.4 - Puerta de Enlace.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.3 - WAN.md",
-    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.4 - Conexión a Internet.md",
     "DAM-1/Sistemas informáticos/Sistemas informáticos.md",
-    "DAM-1/DAM-1.md",
     "DAM-1/Práctica Python.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.4 - Conexión a Internet.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.3 - WAN.md",
+    "DAM-1/!Examenes/Examen Sistemas.md",
     "DAM-1/Digitalización aplicada a los sectores productivos/Trabajo.md",
     "DAM-1/Entornos de desarrollo/Ejercicio 6.md",
     "DAM-1/Itinerario Personal para la Empleabilidad/U11 - Aprendizaje autónomo y competencia digital/U11 - Aprendizaje autónomo y competencia digital.md",
@@ -220,9 +205,18 @@
     "DAM-1/LenguajeMarcas/XQuery/Introducción a XQuery.md",
     "DAM-1/LenguajeMarcas/XQuery/XQuery.xml",
     "DAM-1/LenguajeMarcas/XQuery/Funciones y Operadores en XQuery.md",
+    "DAM-1/LenguajeMarcas/HTML SEO.md",
     "DAM-1/LenguajeMarcas/XQuery",
+    "DAM-1/LenguajeMarcas/XML.md",
     "DAM-1/LenguajeMarcas/XQuery.xml",
+    "DAM-1/!Examenes/Examen Lenguaje.md",
+    "To-Do.md",
+    "Examen Sistemas.md",
     "Pasted image 20260504190046.png",
+    "Cosas Random.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.2 - Redes Inalámbricas.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4.1 - Redes Cableadas.md",
+    "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red/5.4 - Conexión.md",
     "DAM-1/Sistemas informáticos/Tema 5 - Sistemas Informáticos en Red.zip",
     "DAM-1/Programación/Python/_PythonNotesForProfessionals.pdf",
     "DAM-1/Bases de datos/Unit 5 - Triggers",
