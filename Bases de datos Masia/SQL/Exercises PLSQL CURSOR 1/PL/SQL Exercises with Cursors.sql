@@ -11,13 +11,13 @@
 --         select EMPLOYEE_CODE, SALARY
 --         from STAFF;
 --
---     v_total_salarios number := 0;
+--     v_total_salaries number := 0;
 --     accumulated number := 0;
 --     percentage number := 0;
 --
 --     emp_rec emp_cur%rowtype;
 -- begin
---     select sum(SALARY) into v_total_salarios
+--     select sum(SALARY) into v_total_salaries
 --     from STAFF;
 --
 --     open emp_cur;
@@ -26,7 +26,7 @@
 --         fetch emp_cur into emp_rec;
 --         exit when emp_cur%NOTFOUND;
 --
---         percentage := round((emp_rec.SALARY / v_total_salarios) * 100);
+--         percentage := round((emp_rec.SALARY / v_total_salaries) * 100,3);
 --         accumulated := accumulated + percentage;
 --
 --         insert into STAFF_PERCENTAGE (Emp_num, Total, Accumulated)
@@ -51,7 +51,7 @@
 --     v_found boolean := FALSE;
 --
 -- begin
---     IF new_rate <= 0 THEN
+--     IF new_rate not between 2 and 5 THEN
 --         RAISE_APPLICATION_ERROR(-20001, 'ERROR: The tax rate is invalid. It must be greater than 0.');
 --     END IF;
 --
@@ -221,31 +221,181 @@ end;
 /
 -- b
 create or replace procedure updAllPurchases as
-    v_total number;
     cursor cust_cur is
         select DNI, Name
         from CUSTOMER
             FOR UPDATE;
+
     cust_rec cust_cur%rowtype;
+    v_total number;
+
+begin
+    DBMS_OUTPUT.PUT_LINE('Code | Name | Purchases');
+    DBMS_OUTPUT.PUT_LINE('-----------------------------------');
+
+    open cust_cur;
+
+    loop
+        fetch cust_cur into cust_rec;
+        exit when cust_cur%notfound;
+
+        select NVL(SUM(Amount), 0) into v_total
+        from PURCHASE
+        where Client = cust_rec.DNI;
+
+        update CUSTOMER
+        set Purchases = v_total
+        where current of cust_cur;
+
+        DBMS_OUTPUT.PUT_LINE(cust_rec.DNI || ' | ' || cust_rec.Name || ' | ' || v_total);
+
+    end loop;
+
+    close cust_cur;
+    commit;
+end;
+/
+
+-- 6
+-- a
+create or replace procedure updProvince(province_code in PROVINCE.CODE%type) as
+begin
+    update PROVINCE p
+    set TOTAL_AMOUNT = (select NVL(SUM(pur.Amount), 0)
+                        from PURCHASE pur, CUSTOMER c
+                        where pur.CLIENT = c.DNI
+                          and c.PROVINCE = p.CODE)
+    where p.CODE = province_code;
+
+    commit;
+end;
+/
+create or replace procedure updProvince2(province_code in PROVINCE.CODE%type) as
+    sum_purchases number :=0;
+    cursor prov_cur is
+        select pur.AMOUNT
+        from PURCHASE pur, CUSTOMER c
+        where pur.CLIENT = c.DNI
+          and c.PROVINCE = province_code;
+    prov_rec prov_cur%rowtype;
+
     begin
-        DBMS_OUTPUT.PUT_LINE('Code | Name | Purchases');
-        DBMS_OUTPUT.PUT_LINE('-------------------------------------------------------------------');
-        open cust_cur;
+        open prov_cur;
         loop
-            fetch cust_cur into cust_rec;
-            exit when cust_cur%notfound;
+            fetch prov_cur into prov_rec;
+            exit when prov_cur%notfound;
 
-            select sum(AMOUNT) into v_total
-            from PURCHASE
-            where CLIENT=cust_rec.DNI;
-
-            update CUSTOMER set PURCHASES = v_total where current of cust_cur;
-            DBMS_OUTPUT.PUT_LINE(cust_rec.DNI || ' | ' || cust_rec.Name || ' | ' || v_total);
+            sum_purchases := sum_purchases + prov_rec.AMOUNT;
         end loop;
-        DBMS_OUTPUT.PUT_LINE('-------------------------------------------------------------------');
-        close cust_cur;
-        commit;
+        close prov_cur;
+
+        update PROVINCE
+        set TOTAL_AMOUNT=sum_purchases
+        where CODE=province_code;
     end;
+/
+-- b
+create or replace procedure updAllProvinces as
+    cursor prov_cur is
+    select CODE,NAME
+    from PROVINCE
+    for update;
+
+    prov_rec prov_cur%rowtype;
+    v_total number;
     begin
-        updAllPurchases();
+        DBMS_OUTPUT.PUT_LINE('Province Code | Name | Total Purchases');
+        DBMS_OUTPUT.PUT_LINE('-----------------------------------');
+
+        open prov_cur;
+
+        loop
+            fetch prov_cur into prov_rec;
+            exit when prov_cur%notfound;
+
+            select NVL(SUM(pur.Amount), 0) into v_total
+            from PURCHASE pur, CUSTOMER c
+            where pur.CLIENT = c.DNI
+              and c.PROVINCE = prov_rec.CODE;
+
+            update PROVINCE
+            set TOTAL_AMOUNT = v_total
+            where current of prov_cur;
+
+            DBMS_OUTPUT.PUT_LINE(prov_rec.CODE || ' | ' || prov_rec.Name || ' | ' || v_total);
+        end loop;
+        close prov_cur;
+        commit ;
     end;
+/
+begin
+    updAllProvinces();
+end;
+create or replace procedure updAllProvinces_v2 as
+    cursor prov_cur is
+        select CODE, NAME
+        from PROVINCE;
+
+    prov_rec prov_cur%rowtype;
+    v_total_amount PROVINCE.TOTAL_AMOUNT%type;
+
+begin
+    DBMS_OUTPUT.PUT_LINE('Province Code | Name | Total Purchases');
+    DBMS_OUTPUT.PUT_LINE('------------------------------------------');
+
+    open prov_cur;
+    loop
+        fetch prov_cur into prov_rec;
+        exit when prov_cur%notfound;
+
+        updProvince(prov_rec.CODE);
+
+        select TOTAL_AMOUNT into v_total_amount
+        from PROVINCE
+        where CODE = prov_rec.CODE;
+
+        DBMS_OUTPUT.PUT_LINE(prov_rec.CODE || ' | ' || prov_rec.NAME || ' | ' || v_total_amount);
+
+    end loop;
+    close prov_cur;
+
+end;
+/
+-- 7
+create table VendorsProvince(
+    Code varchar2(10),
+    Name varchar2(50),
+    Degree varchar2(20),
+    Province varchar2(50)
+);
+
+create or replace procedure VendorsProvinceProcedure(p_prov_code in PROVINCE.CODE%type) as
+    cursor vend_cur is
+        select distinct v.Code, v.Name, v.Degree, p.Name as Province_Name
+        from Vendor v, Customer c, Province p
+        where v.Code = c.Vendor
+          and c.Province = p.Code
+          and p.Code = p_prov_code;
+        vend_rec vend_cur%rowtype;
+
+        begin
+            DELETE FROM VendorsProvince;
+            open vend_cur;
+            loop
+                fetch vend_cur into vend_rec;
+                exit when vend_cur%notfound;
+
+                insert into VendorsProvince
+                values (vend_rec.CODE,vend_rec.NAME,vend_rec.DEGREE,vend_rec.Province_Name);
+            end loop;
+            close vend_cur;
+            commit ;
+            DBMS_OUTPUT.PUT_LINE(' Code | Name | Degree | Province');
+            FOR rec IN (SELECT * FROM VendorsProvince) loop
+                DBMS_OUTPUT.PUT_LINE(rec.Code || ' | ' || rec.Name || ' | ' || rec.Degree || ' | ' || rec.Province);
+                end loop;
+        end;
+/
+begin
+    VendorsProvinceProcedure('07');
+end;
